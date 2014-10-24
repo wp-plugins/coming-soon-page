@@ -78,7 +78,7 @@ Installing the WordPress Coming Soon plugin
 
 1. Log in to your website administration panel.   
 2. Go to Plugins page Add New > Upload Plugin .    
-3. Click “Choose file” then select the Coming Soon plugin  zip file. 
+3. Click "Choose file" then select the Coming Soon plugin  zip file. 
 4. Then Install and activate the plugin.     
 
 That's all, now you can build you Coming soon page. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
@@ -101,32 +101,33 @@ That's all, now you can build you Coming soon page. If any problem occurs, conta
 
 ### Creating Coming Soon page
 
-*   Coming Soon Mode – Select Coming Soon plugin mode.
-*   Logo – Select your website logo from gallery or just upload it.
+*   Coming Soon Mode - Select Coming Soon plugin mode.
+*   Logo - Select your website logo from gallery or just upload it.
 *   Title - Type your Coming Soon page title.
-*   Massage – Here you can type the massage that will appear on your coming soon page.
+*   Massage - Here you can type the massage that will appear on your coming soon page.
 *   Keywords - Type your Coming Soon page meta keywords.
 *   Description - Type your Coming Soon page meta description.
 *   Content position - Set your Coming Soon page content position.
-*   Countdown – Type the time to activate  the countdown.
+*   Countdown - Type the time to activate  the countdown.
 *   Facebook - Type here your Facebook page url.
-*   Facebook button background image – Upload your button for Facebook or just use our default Facebook button.
+*   Facebook button background image - Upload your button for Facebook or just use our default Facebook button.
 *   Twitter - Type here your Twitter page url.
-*   Twitter button background image – Upload your button for Twitter or just use our default Twitter button.
-*   Google Plus – Type here your Google Plus page url.
-*   Google Plus button background image – Upload your button for Google Plus or just use our default Google Plus button.
+*   Twitter button background image - Upload your button for Twitter or just use our default Twitter button.
+*   Google Plus - Type here your Google Plus page url.
+*   Google Plus button background image - Upload your button for Google Plus or just use our default Google Plus button.
 *   YouTube - Type here your YouTube page url.
-*   YouTube button background image – Upload your button for YouTube or just use our default YouTube button.
+*   YouTube button background image - Upload your button for YouTube or just use our default YouTube button.
 *   Instagram - Type here your Instagram page url.
-*   Instagram button background image – Upload your button for Instagram or just use our default Instagram button.
-*   The second option page is “Design Options” . On this page you can change your Coming Soon page design.
+*   Instagram button background image - Upload your button for Instagram or just use our default Instagram button.
+
+The second option page is “Design Options” . On this page you can change your Coming Soon page design.
 
 ### Coming Soon page design options
 
-*   Coming soon page backround – Select Coming Soon plugin backround  mode. There are tree background types, first simple background using just simple color, second type backround with image and the last type background Slider.
-*   Background Color – Select Coming Soon page background color.
-*   Background image – Upload Coming Soon page background image.
-*   Backround slider –  Upload Coming Soon page background slider images.
+*   Coming soon page backround - Select Coming Soon plugin backround  mode. There are tree background types, first simple background using just simple color, second type backround with image and the last type background Slider.
+*   Background Color - Select Coming Soon page background color.
+*   Background image - Upload Coming Soon page background image.
+*   Backround slider -  Upload Coming Soon page background slider images.
 *   Content border radius - Set your Coming soon page content border radius.
 *   Countdown button background color - Set countdown button background color.
 *   Countdown text color - Set countdown text colors.
@@ -137,5 +138,5 @@ That's all, now you can build you Coming soon page. If any problem occurs, conta
 *   Mailing list input text color - Set Mailing list input text color.
 *   Mailing list button and input font-size - Set Mailing list button and input font-size.
 
-The third option page is “Mailing list” . On this page you can type Sendmail Message text and send Message to users.
-The last option page is “Live Preview” . Here you can see you Coming soon page live preview.
+The third option page is "Mailing list" . On this page you can type Sendmail Message text and send Message to users.
+The last option page is "Live Preview" . Here you can see you Coming soon page live preview.
