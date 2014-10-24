@@ -8,34 +8,35 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Coming soon page plugin is awesome tool to show your users that you are working on your website to make it better. Our coming soon plugin is the best way to create better coming soon page.  
+Coming soon plugin is awesome tool to show your users that you are working on your website to make it better. Our coming soon plugin is the best way to create better coming soon page.  
 
 == Description ==
 
-Coming soon plugin will add some awesome features to your coming soon page.  
+It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.
+Coming soon plugin will add some great features to your coming soon page. 
 
-### The features of Coming Soon plugin
+### Features of Coming Soon plugin
 
 *   Easy install and use
 *   Works perfectly with all versions of WordPress
-*   Fully Responsive plugin
-*   Highly customizable
-*   Ability to change background color
-*   Ability to set background image
+*   Fully Responsive Coming Soon page
+*   Highly customizable Coming Soon page
+*   Ability to change Coming Soon page background color
+*   Ability to set Coming Soon page background image
 *   Ability to set Coming Soon page Title color
 *   Ability to set Coming Soon page Title font size
-*   Ability to use WordPress post toolbar for Coming soon Content
-*   Ability to set Coming soon Content background color
-*   Ability to set Coming page Content background transparency
-*   Ability to set Coming soon Content background border radius
-*   SEO friendly plugin
+*   Ability to use WordPress post toolbar for Coming soon page Content
+*   Ability to set Coming soon page Content background color
+*   Ability to set Coming soon page Content background transparency
+*   Ability to set Coming soon page Content background border radius
+*   SEO friendly Coming Soon page
 *   Set Meta description for your Coming Soon page
 *   Set Meta keywords for your Coming Soon page
 *   Full browser background option
 *   Ability to add Countdown to  your Coming Soon page
-*   Ability to set full browser background image
-*   Ability to control access by IP
-*   Custom Logo
+*   Ability to set full browser background image for you Coming Soon page
+*   Ability to control access by IP to Coming Soon page
+*   Custom Logo for Coming Soon page
 *   Email notifications
 *   Social Media Ready
 *   Facebook
@@ -49,17 +50,17 @@ Coming soon plugin will add some awesome features to your coming soon page.
 *   Instagram
 *   Ability to change Instagram button background image
 *   Uses CSS3
-*   User friendly back-end
+*   User friendly back-end for Coming Soon page
 *   Tested on popular WordPress themes
 *   Coming soon page visible only non logged in users
 
-You can upgrade this plugin to [WordPress Coming Soon Pro](http://wpdevart.com/wordpress-coming-soon-plugin) to add some features.
+You can upgrade Coming Soon plugin to [WordPress Coming Soon Pro](http://wpdevart.com/wordpress-coming-soon-plugin) to add some features.
 
 ### The features of Coming Soon Pro
 
 *   Awesome Background Slider for your Coming Soon page
 *   Ability to set Coming soon page content position
-*   Ability to exclude specific pages, posts or even categories from displaying Coming Soon page
+*   Ability to exclude specific pages, posts  from displaying Coming Soon page
 *   Ability to set Mailing list button background color
 *   Ability to set Mailing list button text color
 *   Ability to set Mailing list input text color
@@ -73,7 +74,7 @@ You can upgrade this plugin to [WordPress Coming Soon Pro](http://wpdevart.com/w
 
 == Installation ==
 
-### First download the ZIP file.  
+### First download the Coming Soon plugin ZIP file.  
 Installing the WordPress Coming Soon plugin  
 
 1. Log in to your website administration panel.   
@@ -81,7 +82,7 @@ Installing the WordPress Coming Soon plugin
 3. Click "Choose file" then select the Coming Soon plugin  zip file. 
 4. Then Install and activate the plugin.     
 
-That's all, now you can build you Coming soon page. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
+That's all, now you can build your Coming soon page. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
 == Screenshots ==
 
@@ -124,19 +125,19 @@ The second option page is "Design Options" . On this page you can change your Co
 
 ### Coming Soon page design options
 
-*   Coming soon page backround - Select Coming Soon plugin backround  mode. There are tree background types, first simple background using just simple color, second type backround with image and the last type background Slider.
+*   Coming soon page backround type - Select Coming Soon plugin backround mode. There are tree background types, the first type is simple background color, second type is backround with image and the last type is background Slider.
 *   Background Color - Select Coming Soon page background color.
 *   Background image - Upload Coming Soon page background image.
 *   Backround slider -  Upload Coming Soon page background slider images.
 *   Content border radius - Set your Coming soon page content border radius.
-*   Countdown button background color - Set countdown button background color.
-*   Countdown text color - Set countdown text colors.
-*   Countdown border radius - Set countdown border radius.
-*   Countdown font-size - Set countdown font-sizes.
-*   Mailing list button background color - Set Mailing list button background color.
-*   Mailing list button text color - Set Mailing list button text color.
-*   Mailing list input text color - Set Mailing list input text color.
-*   Mailing list button and input font-size - Set Mailing list button and input font-size.
+*   Countdown button background color - Set Coming Soon page countdown button background color.
+*   Countdown text color - Set Coming Soon page countdown text colors.
+*   Countdown border radius - Set Coming Soon page countdown border radius.
+*   Countdown font-size - Set Coming Soon page countdown font-sizes.
+*   Mailing list button background color - Set Coming Soon page Mailing list button background color.
+*   Mailing list button text color - Set Coming Soon page Mailing list button text color.
+*   Mailing list input text color - Set Coming Soon page Mailing list input text color.
+*   Mailing list button and input font-size - Set Coming Soon page Mailing list button and input font-size.
 
 The third option page is "Mailing list" . On this page you can type Sendmail Message text and send Message to users.
-The last option page is "Live Preview" . Here you can see you Coming soon page live preview.
+The last option page is "Live Preview" . Here you can see your Coming soon page live preview.
