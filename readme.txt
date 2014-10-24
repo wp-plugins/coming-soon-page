@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Coming soon plugin is awesome tool to show your users that you are working on your website to make it better. Our coming soon plugin is the best way to create better coming soon page.  
+Coming soon plugin is awesome tool to show your users that you are working on your website to make it better. 
 
 == Description ==
 
-It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.
+It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.Our coming soon plugin is the best way to create better coming soon page.  
 Coming soon plugin will add some great features to your coming soon page. 
 
 ### Features of Coming Soon plugin
