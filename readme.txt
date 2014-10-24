@@ -120,7 +120,7 @@ That's all, now you can build you Coming soon page. If any problem occurs, conta
 *   Instagram - Type here your Instagram page url.
 *   Instagram button background image - Upload your button for Instagram or just use our default Instagram button.
 
-The second option page is “Design Options” . On this page you can change your Coming Soon page design.
+The second option page is "Design Options" . On this page you can change your Coming Soon page design.
 
 ### Coming Soon page design options
 
