@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Coming soon plugin is awesome tool to show your users that you are working on your website to make it better. 
+Coming soon plugin is awesome tool to show your users that you are working on your website to make it better.   
 
 == Description ==
 
-It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.Our coming soon plugin is the best way to create better coming soon page.  
+It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.Our coming soon plugin is the best way to create better coming soon page.
 Coming soon plugin will add some great features to your coming soon page. 
 
 ### Features of Coming Soon plugin
@@ -61,14 +61,16 @@ You can upgrade Coming Soon plugin to [WordPress Coming Soon Pro](http://wpdevar
 *   Awesome Background Slider for your Coming Soon page
 *   Ability to set Coming soon page content position
 *   Ability to exclude specific pages, posts  from displaying Coming Soon page
-*   Ability to set Mailing list button background color
-*   Ability to set Mailing list button text color
-*   Ability to set Mailing list input text color
-*   Ability to set Mailing list button and input font-size
-*   Ability to set Countdown button background color
-*   Ability to set Countdown button border radius
-*   Ability to set Countdown text color
-*   Ability to set Countdown font-size
+*   Ability to set Coming Soon page Mailing list button background color
+*   Ability to set Coming Soon page Mailing list button text color
+*   Ability to set Coming Soon page Mailing list input text color
+*   Ability to set Coming Soon page Mailing list button and input font-size
+*   Ability to set Coming Soon page Countdown button background color
+*   Ability to set Coming Soon page Countdown button border radius
+*   Ability to set Coming Soon page Countdown text color
+*   Ability to set Coming Soon page Countdown font-size
+
+### View our Coming Soon plugin Demo page - [Coming soon Demo](http://democomingsoon.wpdevart.com/)
 
 ### If you found any bug in our [WordPress Coming soon](http://wpdevart.com/wordpress-coming-soon-plugin) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
