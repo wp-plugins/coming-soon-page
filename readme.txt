@@ -19,8 +19,8 @@ Coming soon plugin will add some great features to your coming soon page.
 
 *   Easy install and use
 *   Works perfectly with all versions of WordPress
-*   Fully Responsive Coming Soon page
-*   Highly customizable Coming Soon page
+*   **Fully Responsive Coming Soon page**
+*   **Highly customizable Coming Soon page**
 *   Ability to change Coming Soon page background color
 *   Ability to set Coming Soon page background image
 *   Ability to set Coming Soon page Title color
@@ -29,16 +29,16 @@ Coming soon plugin will add some great features to your coming soon page.
 *   Ability to set Coming soon page Content background color
 *   Ability to set Coming soon page Content background transparency
 *   Ability to set Coming soon page Content background border radius
-*   SEO friendly Coming Soon page
+*   **SEO friendly Coming Soon page**
 *   Set Meta description for your Coming Soon page
 *   Set Meta keywords for your Coming Soon page
-*   Full browser background option
-*   Ability to add Countdown to  your Coming Soon page
-*   Ability to set full browser background image for you Coming Soon page
-*   Ability to control access by IP to Coming Soon page
-*   Custom Logo for Coming Soon page
-*   Email notifications
-*   Social Media Ready
+*   **Full browser background option**
+*   **Ability to add Countdown to your Coming Soon page**
+*   **Ability to set full browser background image for you Coming Soon page**
+*   **Ability to control access by IP to Coming Soon page**
+*   **Custom Logo for Coming Soon page**
+*   **Email notifications**
+*   **Social Media Ready**
 *   Facebook
 *   Ability to change Facebook button background image
 *   Twitter
@@ -58,9 +58,9 @@ You can upgrade Coming Soon plugin to [WordPress Coming Soon Pro](http://wpdevar
 
 ### The features of Coming Soon Pro
 
-*   Awesome Background Slider for your Coming Soon page
-*   Ability to set Coming soon page content position
-*   Ability to exclude specific pages, posts  from displaying Coming Soon page
+*   **Awesome Background Slider for your Coming Soon page**
+*   **Ability to set Coming soon page content position**
+*   **Ability to exclude specific pages, posts  from displaying Coming Soon page**
 *   Ability to set Coming Soon page Mailing list button background color
 *   Ability to set Coming Soon page Mailing list button text color
 *   Ability to set Coming Soon page Mailing list input text color
@@ -77,7 +77,7 @@ You can upgrade Coming Soon plugin to [WordPress Coming Soon Pro](http://wpdevar
 == Installation ==
 
 ### First download the Coming Soon plugin ZIP file.  
-Installing the WordPress Coming Soon plugin  
+Installing the WordPress **Coming Soon** plugin  
 
 1. Log in to your website administration panel.   
 2. Go to Plugins page Add New > Upload Plugin .    
@@ -88,12 +88,12 @@ That's all, now you can build your Coming soon page. If any problem occurs, cont
 
 == Screenshots ==
 
-1.  WordPress Coming soon page Front-end    
-2.  WordPress Coming soon page Back-end(General settings)     
-3.  WordPress Coming soon page Back-end(General settings)     
-4.  WordPress Coming soon page Back-end(Design Options)     
-5.  WordPress Coming soon page Mailing list     
-6.  WordPress Coming soon page Live preview     
+1.  **WordPress Coming** soon page Front-end    
+2.  **WordPress Coming** soon page Back-end(General settings)     
+3.  **WordPress Coming** soon page Back-end(General settings)     
+4.  **WordPress Coming** soon page Back-end(Design Options)     
+5.  **WordPress Coming** soon page Mailing list     
+6.  **WordPress Coming** soon page Live preview     
 
 == Changelog ==
 
