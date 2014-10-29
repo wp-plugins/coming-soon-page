@@ -194,9 +194,7 @@ class coming_soon_front_end{
 				}
 				.element_conteiner{
 					width:150px;
-					margin-left:4.3%;
-					display: inline-block;
-					
+					display: inline-block;					
 				}
 				.time_left{
 					border:none;
@@ -469,12 +467,24 @@ class coming_soon_front_end{
 				hours_left=parseInt((all_time-days_left*3600*24)/(3600));
 				minutes_left=parseInt((all_time-days_left*3600*24-hours_left*3600)/(60));
 				secondes_left=parseInt((all_time-days_left*3600*24-hours_left*3600-minutes_left*60));
-				jQuery('#days').html(days_left);
-				jQuery('#hourse').html(hours_left);
-				jQuery('#minutes').html(minutes_left);
-				jQuery('#secondes').html(secondes_left);
+				if((""+days_left+"").length>1)
+					jQuery('#days').html(days_left);
+				else
+					jQuery('#days').html('0'+days_left);
+				if((""+hours_left+"").length>1)
+					jQuery('#hourse').html(hours_left);
+				else
+					jQuery('#hourse').html('0'+hours_left);
+				if((""+minutes_left+"").length>1)
+					jQuery('#minutes').html(minutes_left);
+				else
+					jQuery('#minutes').html('0'+minutes_left);
+				if((""+secondes_left+"").length>1)
+					jQuery('#secondes').html(secondes_left);
+				else
+					jQuery('#secondes').html('0'+secondes_left);
 				if(days_left<=0 && hours_left<=0 && minutes_left<=0 && secondes_left<=0){
-					window.location="<?php echo site_url();  ?>"
+					window.location="http://democomingsoon.wpdevart.com"
 				}
 			}
 			
