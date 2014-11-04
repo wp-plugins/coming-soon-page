@@ -31,20 +31,23 @@
 	margin-left: -20px;
 }
 #save_button,#send_mailing{
-	margin-left:20px;
-	font-size:25px;
-	font-weight:bold;
-	padding-top:12px;
-	padding-bottom:12px;
-	height:auto;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	height: auto;
+}
+#send_mailing{
+	margin-left:0px;
 }
 #save_button_design{
-	margin-left:20px;
-	font-size:25px;
-	font-weight:bold;
-	padding-top:12px;
-	padding-bottom:12px;
-	height:auto;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	height: auto;
 }
 .emelent_coming_soon_page_showed_urls input{
 	width:600px;
@@ -54,4 +57,69 @@
 }
 .remove_upload_image{
 	margin-left:5px !important;
+}
+.pro_subtitle_span{
+	color:rgba(10, 154, 62, 1);
+}
+
+
+/*********Ssve Button***********/
+
+button{
+	webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+ }
+#save_button,#save_button_design{
+	width: 210px;
+	text-align: left;
+	overflow:hidden;
+}
+#save_button_design{
+	width: 200px;
+}
+.padding_loading{
+	width: 250px !important;
+}
+#save_button_design.padding_loading{
+	width: 240px !important;
+	
+}
+ .saving_in_progress{
+	position: relative;
+	display:none;
+	width: 20px;
+	height: 20px;
+	margin-left: 12px;
+	top: 4px;
+	background-image: url(../../images/loading.gif);
+	background-size:100% 100%;
+ }
+ .sucsses_save{
+	position: relative;
+	display:none;
+	width: 20px;
+	height: 20px;
+	margin-left: 12px;
+	top: 4px;
+	background-image: url(../../images/success.png);
+	background-size:100% 100%;
+}
+.error_in_saving{
+	position: relative;
+	display:none;
+	width: 20px;
+	height: 20px;
+	margin-left: 12px;
+	top: 4px;
+	background-image: url(../../images/remove_element.png);
+	background-size:100% 100%;
+}
+.error_massage{
+	color: #BB1E1E;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 21px;
 }

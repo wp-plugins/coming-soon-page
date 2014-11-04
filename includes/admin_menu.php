@@ -7,15 +7,30 @@ class coming_soon_admin_menu{
 	private $menu_name;
 	private $databese_parametrs;
 	private $plugin_url;
+	private $text_parametrs;
 	
 	function __construct($param){
-		$this->menu_name=$param['menu_name'];
-		$this->databese_parametrs=$param['databese_parametrs'];
+		
+		$this->text_parametrs=array(
+			'parametrs_sucsses_saved'=>'Your message was sent successfully.',
+			'error_in_saving'=>'can\'t save "%s" plugin parameter<br>',
+			'get_pro_vrsion_javascript_alert' =>'If you want to use this feature upgrade to Coming soon Pro',
+			'get_pro_version_subtitle' => 'Pro feature!',
+			
+		);		
+		
+		$this->menu_name=$param['menu_name']; //get menu name
+		$this->databese_parametrs=$param['databese_parametrs']; //databese parametrs
+		
+		
+		// et plugin url
 		if(isset($params['plugin_url']))
 			$this->plugin_url=$params['plugin_url'];
 		else
 			$this->plugin_url=trailingslashit(dirname(plugins_url('',__FILE__)));
 
+
+		//hooks for ajax
 		add_action( 'wp_ajax_coming_soon_page_save', array($this,'save_in_databese') );
 		add_action( 'wp_ajax_coming_soon_send_mail', array($this,'sending_mail') );
 	}
@@ -48,44 +63,6 @@ class coming_soon_admin_menu{
 		return NULL;
 		
 	}
-	public function sending_mail(){
-		$mailing_lists=json_decode(stripslashes(get_option('users_mailer','')), true);
-		if($mailing_lists==NULL)
-			$mailing_lists=array();
-		$not_sending_mails=array();
-		$sending_mails=array();
-		if(!(isset($_POST['massage_title']) && $_POST['massage_title']!='')){
-			echo 'Type Message Title';
-			die();
-		}
-		if(!(isset($_POST['massage_description']) && $_POST['massage_description']!='')){
-			echo 'Type Message';
-			die();
-		}		
-		foreach($mailing_lists as $key => $mail){
-			$send=wp_mail( $mail, $_POST['massage_title'], $_POST['massage_description']);
-			if(!$send){
-				array_push($not_sending_mails,$mail);
-			}
-			else
-			{
-				array_push($sending_mails,$key);
-			}
-		}
-		foreach($sending_mails as $key){
-			unset($mailing_lists[$key]);
-		}
-		update_option('users_mailer',json_encode($mailing_lists));
-		if(count($not_sending_mails)){
-			foreach($not_sending_mails as $errors){
-				echo $errors.',';
-			}
-			echo " Mails Not sended";
-			exit;
-		}
-		die('Your message was sent successfully.');
-		
-	}
 	public function save_in_databese(){
 		$kk=1;		
 		if(isset($_POST['coming_soon_options_nonce']) && wp_verify_nonce( $_POST['coming_soon_options_nonce'],'coming_soon_options_nonce')){
@@ -94,12 +71,14 @@ class coming_soon_admin_menu{
 					update_option($key,$_POST[$key]);
 				else{
 					$kk=0;
-					echo 'parametr'.$key.' ERROR NOT SAVE';
+					printf($this->text_parametrs['error_in_saving'],$key);
 				}
 			}	
 		}
-			if($kk){ echo "Changes have been saved";}
-		die();
+		if($kk==0){
+			exit;
+		}
+		die($this->text_parametrs['parametrs_sucsses_saved']);
 	}
 	
 	public function main_menu_function(){
@@ -126,8 +105,9 @@ class coming_soon_admin_menu{
 		}
         </style>
         <script>
+		var text_of_upgrate_version='<?php echo $this->text_parametrs['get_pro_vrsion_javascript_alert'] ?>';
 	jQuery(document).ready(function() {
-			var link_my_plugin="http://wpdevart.com/wordpress-coming-soon-plugin/"
+		var link_my_plugin="http://wpdevart.com/wordpress-coming-soon-plugin/"
 		if (typeof(localStorage) != 'undefined' ) {
 			active_tab = localStorage.getItem("active_tab");
 			if(active_tab==link_my_plugin)
@@ -215,9 +195,9 @@ class coming_soon_admin_menu{
         <h2 class="nav-tab-wrapper in-page-tab">
             <a id="options-group-1-tab" class="nav-tab" title="SEO" href="#options-group-1">General Settings</a>
             <a id="options-group-2-tab" class="nav-tab" title="Layout Editor" href="#options-group-2">Design Option</a>
-            <a id="options-group-3-tab" class="nav-tab" title="General" href="#options-group-3">Mailing List</a>
+            <a id="options-group-3-tab" class="nav-tab" title="General" href="#options-group-3">Mailing List <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></a>
             <a id="options-group-4-tab" class="nav-tab" title="Homepage" href="#options-group-4">Liev Preview</a>
-			<a id="options-group-4-tab" class="nav-tab" title="Homepage" href="http://wpdevart.com/wordpress-coming-soon-plugin/"><span style="color: rgba(216, 19, 19, 1); font-weight: bold; font-size: 21px;">Upgrade to Pro Version</span></a>
+			<a id="options-group-4-tab" class="nav-tab" title="Homepage" href="http://wpdevart.com/wordpress-coming-soon-plugin/"><span style="color: rgba(10, 154, 62, 1); font-weight: bold; font-size: 21px;">Upgrade to Pro Version</span></a>
 
         </h2>
         <div id="optionsframework-metabox" class="metabox-holder">
@@ -226,7 +206,7 @@ class coming_soon_admin_menu{
                     <div id="options-group-1" class="group general_settings" style="display: none;"><h3>General Settings</h3> <?php $this->generete_general_settings_page($this->generete_parametrs('general'));  ?></div>
                     <div id="options-group-2" class="group design_settings" style="display: none;"><h3>Design Options</h3> <?php $this->generete_design_options_page($this->generete_parametrs('design')); ?></div>
                     <div id="options-group-3" class="group templates" style="display: none;"><h3>Mailing List</h3><?php $this->generete_mailing_list_options_page($this->generete_parametrs('mailing_list')); ?></div>
-                    <div id="options-group-4" class="group Homepage" style="display: none;"><h3><span style="color:red"> Please refresh this page to see changes(F5).</span></h3><?php $this->generete_mailing_live_previev_page($this->generete_parametrs('mailing_list')); ?></div>
+                    <div id="options-group-4" class="group Homepage" style="display: none;"><h3><span class='pro_subtitle_span'> Please refresh this page to see changes(F5).</span></h3><?php $this->generete_mailing_live_previev_page($this->generete_parametrs('mailing_list')); ?></div>
             
 			</div>
          </div>
@@ -250,24 +230,25 @@ class coming_soon_admin_menu{
                
                 <input type="hidden" class="insert_value_this" name="coming_soon_page_mode" id="coming_soon_page_mode" value="<?php echo $page_parametrs['coming_soon_page_mode'] ?>"  />
             </div>
-             <div class="option_group">
-             	<h4  class="option_title">Mailing List </h4>
-
+            
+            <div class="option_group">
+            
+             	<h4  class="option_title">Mailing List  <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 <label for="enable_mailing_liston">Enable Mailing List</label>
-                <input type="radio" onchange="generete_radio_input_hidden(this)"  name="enable_mailing_listradio" id="enable_mailing_liston" value="on" <?php checked($page_parametrs['enable_mailing_list'], "on"); ?> />
+                <input type="radio" onclick="alert(text_of_upgrate_version); return false;" name="enable_mailing_listradio" id="enable_mailing_liston" value="on" />
 				<br /><br />
                 <label for="enable_mailing_listoff">Disable Mailing List</label>
-                <input type="radio" onchange="generete_radio_input_hidden(this)" name="enable_mailing_listradio" id="enable_mailing_listoff" value="off" <?php checked($page_parametrs['enable_mailing_list'], "off"); ?>/>
-
-                <input type="hidden" class="insert_value_this" name="enable_mailing_list" id="enable_mailing_list" value="<?php echo $page_parametrs['enable_mailing_list'] ?>"  />
+                <input type="radio" onclick="alert(text_of_upgrate_version); return false;" name="enable_mailing_listradio" id="enable_mailing_listoff" value="off" checked="checked"/>
             </div>
+            
             <div class="option_group">
-                <h4 class="option_title">Mailing list input text</h4>
-                <input type="text" size="60" value="<?php echo htmlspecialchars(stripslashes($page_parametrs['mailing_list_value_of_emptyt'])) ?>" id="mailing_list_value_of_emptyt" name="mailing_list_value_of_emptyt" />
+                <h4 class="option_title">Mailing list input text  <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
+                <input type="text" size="60"  onclick="alert(text_of_upgrate_version); return false;" value="Email" id="mailing_list_value_of_emptyt" name="mailing_list_value_of_emptyt" />
             </div>
+            
             <div class="option_group">
-                <h4 class="option_title">Mailing list send button text</h4>
-                <input type="text" size="60" value="<?php echo htmlspecialchars(stripslashes($page_parametrs['mailing_list_button_value'])) ?>" id="mailing_list_button_value" name="mailing_list_button_value" />
+                <h4 class="option_title">Mailing list send button text  <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
+                <input type="text" size="60"  onclick="alert(text_of_upgrate_version); return false;" value="Send" id="mailing_list_button_value" name="mailing_list_button_value" />
             </div>
             <div class="option_group">
                 <h4 class="option_title">Logo</h4>
@@ -295,13 +276,13 @@ class coming_soon_admin_menu{
             </div>
 
             <div class="option_group">
-                <h4 class="option_title">Countdown(Timer)</h4><br />
+                <h4 class="option_title">Countdown(Timer)  <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4><br />
                <?php  $countdown= json_decode(stripslashes($page_parametrs['coming_soon_page_countdown']), true); 		   ?>
-                    <input type="text" onchange="refresh_countdown()"  placeholder="day"   id="coming_soon_page_countdownday" size="6" value="<?php if(isset($countdown['days'])) echo $countdown['days']; ?>"/>
-                    <input type="text"  onchange="refresh_countdown()"  placeholder="housrse" id="coming_soon_page_countdownhour" size="6" value="<?php if(isset($countdown['hours'])) echo $countdown['hours']; ?>"/>
-                    <input type="text"  onchange="refresh_countdown()"  placeholder="Start Date"  id="coming_soon_page_countdownstart_day" size="12" value="<?php if(isset($countdown['start_day'])) echo $countdown['start_day']; ?>"/>
-                   <h4 style="margin-top: 26px;" class="option_title">Continue showing Coming soon page after ending date.</h4>
-					<input type="checkbox" onchange="refresh_countdown()" <?php checked($countdown['countedown_on'], "on"); ?>  value="on" id="coming_soon_page_countdownstart_on"/>
+                    <input type="text"  onclick="alert(text_of_upgrate_version); return false;"  placeholder="day"   id="coming_soon_page_countdownday" size="6" />
+                    <input type="text"   onclick="alert(text_of_upgrate_version); return false;"  placeholder="housrse" id="coming_soon_page_countdownhour" size="6" />
+                    <input type="text"   onclick="alert(text_of_upgrate_version); return false;"  placeholder="Start Date"  id="coming_soon_page_countdownstart_day" size="12"/>
+                   <h4 style="margin-top: 26px;" class="option_title">Continue showing Coming soon page after ending date.  <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
+					<input type="checkbox"  onclick="alert(text_of_upgrate_version); return false;" <?php checked($countdown['countedown_on'], "on"); ?>  value="on" id="coming_soon_page_countdownstart_on"/>
 
 				   <input type="hidden" value='<?php echo stripslashes($page_parametrs['coming_soon_page_countdown']) ?>' id="coming_soon_page_countdown" name="coming_soon_page_countdown" />
                
@@ -312,7 +293,7 @@ class coming_soon_admin_menu{
                 </div>
             </div>
             <div class="option_group" >
-             	<h4 class="option_title">Disable coming soon page for this urls <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+             	<h4 class="option_title">Disable coming soon page for this urls <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 <div class="emelent_coming_soon_page_showed_urls"> 
 					<input onclick="alert(text_of_upgrate_version); return false" type="text" placeholder="Type Ip URl" value="">
 					<span class="remove_element remove_element_coming_soon_page_showed_urls"></span> 				
@@ -339,16 +320,18 @@ class coming_soon_admin_menu{
                 <h4 class="option_title">Instagram</h4><br />
                 <input type="text" class="upload" id="coming_soon_page_instagram" name="coming_soon_page_instagram" size="60" value="<?php echo $page_parametrs['coming_soon_page_instagram'] ?>"/>
             </div>
-            <button type="button" id="save_button" class="save_button button button-primary">Save General Settings</button>
+            <button type="button" id="save_button" class="save_button button button-primary"><span>Save General Settings</span> <span class="saving_in_progress"> </span><span class="sucsses_save"> </span><span class="error_in_saving"> </span></button>
+           	<br /><br />
+            <span class="error_massage"></span>
             <?php wp_nonce_field('coming_soon_options_nonce','coming_soon_options_nonce'); ?>
         </form>
-         
          <script>
 		 
 		 
 		 ///////////////					///////////////
 		 ///////////////	MANY INPUTS		///////////////
 		 ///////////////					///////////////
+		 disablede=false;
 		 var many_inputs={
 				main_element_for_inserting_element:'no_blocked_ips',
 				element_name_and_id:'coming_soon_page_showed_ips',
@@ -470,16 +453,30 @@ class coming_soon_admin_menu{
 						tinymce.get( 'coming_soon_page_page_title').save();
 					if(tinymce.get( 'coming_soon_page_page_message')!=null)
 						tinymce.get( 'coming_soon_page_page_message').save()
-					jQuery('body').prepend('<div id="saving_soon"><span id="loading_text"><img src="<?php echo $this->plugin_url.'images/loading_big.gif' ?>" /></span></div>');
-					jQuery('#saving_soon').height(jQuery(window).height());
-					//jQuery('#saving_soon').click(function(){jQuery('#saving_soon').remove()})
+						
+					jQuery('#save_button').addClass('padding_loading');
+					jQuery("#save_button").prop('disabled', true);
+					jQuery('.saving_in_progress').css('display','inline-block');
+					
 					jQuery.ajax({
 						type:'POST',
 						url: "<?php echo admin_url( 'admin-ajax.php?action=coming_soon_page_save' ); ?>",
 						data: {curent_page:'general',coming_soon_options_nonce:jQuery('#coming_soon_options_nonce').val()<?php foreach($page_parametrs as $key => $value){echo ','.$key.':jQuery("#'.$key.'").val()';} ?>},
 					}).done(function(date) {
-						alert(date)
-					  jQuery('#saving_soon').remove();
+						jQuery('.saving_in_progress').css('display','none');
+						if(date=='<?php echo $this->text_parametrs['parametrs_sucsses_saved'] ?>'){
+							if(jQuery('#live_prev').length){
+								jQuery('#live_prev').attr('src',jQuery('#live_prev').attr('src')+'&'+Math.floor((Math.random() * 100000) + 1)+'='+Math.floor((Math.random() * 100000) + 1));
+							}
+							jQuery('.sucsses_save').css('display','inline-block');
+							setTimeout(function(){jQuery('.sucsses_save').css('display','none');jQuery('#save_button').removeClass('padding_loading');jQuery("#save_button").prop('disabled', false);},2500);
+							
+						}
+						else{
+							jQuery('.error_in_saving').css('display','inline-block');
+							jQuery('.error_massage').html(date);
+							
+						}
 					});
 				});
 			
@@ -487,6 +484,7 @@ class coming_soon_admin_menu{
 		         /// for upload 
 					/* set uploader size in resizing*/
 				jQuery('.upload-button').click(function () {
+				if(disablede){disablede=false; alert(text_of_upgrate_version);  return false;}
 					window.parent.uploadID = jQuery(this).prev('input');
 					/*grab the specific input*/
 					formfield = jQuery('.upload').attr('name');
@@ -516,7 +514,7 @@ class coming_soon_admin_menu{
 				jQuery(element).parent().find('.insert_value_this').val(jQuery(element).parent().find('input[type=radio]:checked').val())
 				
 			}
-			var text_of_upgrate_version='If you want to use this feature upgrade to Coming soon Pro';
+			   
          </script>
          <?php
 	
@@ -533,7 +531,7 @@ class coming_soon_admin_menu{
                 <label for="coming_soon_page_radio_backroundimage">Background Image</label>
                 <input type="radio" onchange="generete_radio_input(this)"  name="coming_soon_page_radio_backroundradio" id="coming_soon_page_radio_backroundimage" value="back_imge" <?php checked($page_parametrs['coming_soon_page_radio_backroun'], "back_imge"); ?> />
                 
-                <label for="coming_soon_page_radio_backroundslider">Background Slider <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></label>
+                <label for="coming_soon_page_radio_backroundslider">Background Slider <span style="color:rgba(10, 154, 62, 1); font-weight:bold;">Pro feature!</span></label>
                 <input type="radio" onclick="alert(text_of_upgrate_version); return false"  name="coming_soon_page_radio_backroundradio" />
                 <input type="hidden" class="insert_design_value_this" name="coming_soon_page_radio_backroun" id="coming_soon_page_radio_backroun" value="<?php echo $page_parametrs['coming_soon_page_radio_backroun'] ?>"  />
             </div>
@@ -577,21 +575,21 @@ class coming_soon_admin_menu{
             </div>
 
              <div class="option_group">
-                <h4 class="option_title">Title Font Size</h4>
+                <h4 class="option_title">Title Font Size <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div id="upload_image">
-                    	<input type="text" class="upload" id="coming_soon_page_page_title_font_size" name="coming_soon_page_page_title_font_size" size="3" value="<?php echo $page_parametrs['coming_soon_page_page_title_font_size'] ?>"/>Px
+                    	<input type="text" onclick="alert(text_of_upgrate_version); return false" class="upload" id="coming_soon_page_page_title_font_size" name="coming_soon_page_page_title_font_size" size="3" value="<?php echo $page_parametrs['coming_soon_page_page_title_font_size'] ?>"/>Px
                 	</div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Title Color</h4>
-                	<div id="upload_image">
-                    	<input type="text" class="upload" id="coming_soon_page_page_title_color" name="coming_soon_page_page_title_color" size="60" value="<?php echo $page_parametrs['coming_soon_page_page_title_color'] ?>"/>
-                	</div>
+                <h4 class="option_title">Title Color <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
+                <div class='disabled_for_pro'>
+                    <div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(0, 0, 0);"></a></div>
+                </div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Content position <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Content position <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
 
                 <table class="bws_position_table">
                     <tbody>
@@ -616,51 +614,51 @@ class coming_soon_admin_menu{
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Coming soon Content background color</h4>
-                	<div >
-                    	<input type="text"  id="coming_soon_page_content_bg_color" name="coming_soon_page_content_bg_color" size="60" value="<?php echo $page_parametrs['coming_soon_page_content_bg_color'] ?>"/>
-                	</div>
+                <h4 class="option_title">Coming soon Content background color <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
+                <div class='disabled_for_pro'>
+                    <div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(255, 255, 255);"></a></div>
+                </div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Coming page Content background transparency</h4>
-                <input type="text" size="3" name="coming_soon_page_content_trasparensy" value="50" id="coming_soon_page_content_trasparensy" style="border:0; color:#f6931f; font-weight:bold; width:35px" >%
-               <div style="width:240px" id="slider-coming_soon_page_content_trasparensy" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                <h4 class="option_title">Coming page Content background transparency <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
+                <input type="text" size="3" name="coming_soon_page_content_trasparensy" onclick="alert(text_of_upgrate_version); return false" value="50" id="coming_soon_page_content_trasparensy" style="border:0; color:#f6931f; font-weight:bold; width:35px" >%
+               <div style="width:240px" id="slider-coming_soon_page_content_trasparensy"  onclick="alert(text_of_upgrate_version); return false" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
                    <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
                </div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Content border radius</h4>
+                <h4 class="option_title">Content border radius <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div>
-                    	<input type="text"  id="page_content_boreder_radius" name="page_content_boreder_radius" size="3" value="<?php echo $page_parametrs['page_content_boreder_radius'] ?>"/>Px
+                    	<input type="text"  id="page_content_boreder_radius" onclick="alert(text_of_upgrate_version); return false"  name="page_content_boreder_radius" size="3" value="8"/>Px
                 	</div>
             </div>
             
             
             
            <div class="option_group">
-                <h4 class="option_title">Countdown button background color <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Countdown button background color <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div class='disabled_for_pro'>
                     	<div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(61, 168, 204);"></a></div>
                 	</div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Countdown text color <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Countdown text color <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div class='disabled_for_pro'>
                     	<div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(0, 0, 0);"></a></div>
                 	</div>
             </div>
             <div class="option_group">
-                <h4 class="option_title">Countdown border radius <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Countdown border radius <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div>
                     	<input type="text"  onclick="alert(text_of_upgrate_version); return false"   size="3" value="8"/>Px
                 	</div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Countdown font-size <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Countdown font-size <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div>
                     	<input type="text"  onclick="alert(text_of_upgrate_version); return false"   size="3" value="30"/>Px
                 	</div>
@@ -670,31 +668,31 @@ class coming_soon_admin_menu{
 
 
             <div class="option_group">
-                <h4 class="option_title">Mailing list button background color <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Mailing list button background color <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div class='disabled_for_pro'>
                     	<div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(61, 168, 204);"></a></div>
                 	</div>
             </div>
             <div class="option_group">
-                <h4 class="option_title">Mailing list button text color <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Mailing list button text color <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div class='disabled_for_pro'>
                     	<div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(0, 0, 0);"></a></div>
                 	</div>
             </div>
             <div class="option_group">
-                <h4 class="option_title">Mailing list input text color <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Mailing list input text color <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div class='disabled_for_pro'>
                     	<div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(0, 0, 0);"></a></div>
                 	</div>
             </div>
             <div class="option_group">
-                <h4 class="option_title">Mailing list button and input font-size <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Mailing list button and input font-size <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div>
                     	<input type="text"  onclick="alert(text_of_upgrate_version); return false"   size="3" value="25"/>Px
                 	</div>
             </div>
             <div class="option_group">
-                <h4 class="option_title">Text color that will appear after sending Email. <span style="color:rgba(216, 19, 19, 1);">Pro feature!</span></h4>
+                <h4 class="option_title">Text color that will appear after sending Email. <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 	<div class='disabled_for_pro'>
                     	<div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(255, 255, 255);"></a></div>
                 	</div>
@@ -703,46 +701,48 @@ class coming_soon_admin_menu{
             
             
             <div class="option_group">
-                <h4 class="option_title">Facebook button background image</h4>
+                <h4 class="option_title">Facebook button background image <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 <div id="upload_image">
-                    <input type="text" class="upload" id="social_facbook_bacground_image" name="social_facbook_bacground_image" size="60" value="<?php echo $page_parametrs['social_facbook_bacground_image'] ?>"/>
-                    <input class="upload-button" type="button" value="Upload Image"/>
+                    <input type="text" class="upload"  onclick="alert(text_of_upgrate_version); return false" id="social_facbook_bacground_image" name="social_facbook_bacground_image" size="60" value="<?php echo $this->plugin_url.'images/template1/facebook.png' ?>"/>
+                    <input class="upload-button"  onclick="disablede=true;" type="button" value="Upload Image"/>
                 </div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Twitter button background image</h4>
+                <h4 class="option_title">Twitter button background image <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 <div id="upload_image">
-                    <input type="text" class="upload" id="social_twiter_bacground_image" name="social_twiter_bacground_image" size="60" value="<?php echo $page_parametrs['social_twiter_bacground_image'] ?>"/>
-                    <input class="upload-button" type="button" value="Upload Image"/>
+                    <input type="text" class="upload"  onclick="alert(text_of_upgrate_version); return false" id="social_twiter_bacground_image" name="social_twiter_bacground_image" size="60" value="<?php echo $this->plugin_url.'images/template1/twiter.png' ?>"/>
+                    <input class="upload-button"  onclick="disablede=true; " type="button" value="Upload Image"/>
                 </div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Google+ button background image</h4>
+                <h4 class="option_title">Google+ button background image <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 <div id="upload_image">
-                    <input type="text" class="upload" id="social_google_bacground_image" name="social_google_bacground_image" size="60" value="<?php echo $page_parametrs['social_google_bacground_image'] ?>"/>
-                    <input class="upload-button" type="button" value="Upload Image"/>
+                    <input type="text" class="upload"  onclick="alert(text_of_upgrate_version); return false" id="social_google_bacground_image" name="social_google_bacground_image" size="60" value="<?php echo $this->plugin_url.'images/template1/gmail.png' ?>"/>
+                    <input class="upload-button"  onclick="disablede=true;" type="button" value="Upload Image"/>
                 </div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">YouTube button background image</h4>
+                <h4 class="option_title">YouTube button background image <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 <div id="upload_image">
-                    <input type="text" class="upload" id="social_youtobe_bacground_image" name="social_youtobe_bacground_image" size="60" value="<?php echo $page_parametrs['social_youtobe_bacground_image'] ?>"/>
-                    <input class="upload-button" type="button" value="Upload Image"/>
+                    <input type="text" class="upload"   onclick="alert(text_of_upgrate_version); return false" id="social_youtobe_bacground_image" name="social_youtobe_bacground_image" size="60" value="<?php echo $this->plugin_url.'images/template1/youtobe.png' ?>"/>
+                    <input class="upload-button"   onclick="disablede=true; return false" type="button" value="Upload Image"/>
                 </div>
             </div>
             
             <div class="option_group">
-                <h4 class="option_title">Instagram button background image</h4>
+                <h4 class="option_title">Instagram button background image <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></h4>
                 <div id="upload_image">
-                    <input type="text" class="upload" id="social_instagram_bacground_image" name="social_instagram_bacground_image" size="60" value="<?php echo $page_parametrs['social_instagram_bacground_image'] ?>"/>
-                    <input class="upload-button" type="button" value="Upload Image"/>
+                    <input type="text" class="upload"   onclick="alert(text_of_upgrate_version); return false;" id="social_instagram_bacground_image" name="social_instagram_bacground_image" size="60" value="<?php echo $this->plugin_url.'images/template1/instagram.png' ?>"/>
+                    <input class="upload-button" type="button"   onclick="disablede=true; return false" value="Upload Image"/>
                 </div>
             </div>            
 
-            <button type="button" id="save_button_design" class="save_button button button-primary">Save Design Settings</button>
+            <button type="button" id="save_button_design" class="save_button button button-primary"><span>Save Design Settings</span> <span class="saving_in_progress"> </span><span class="sucsses_save"> </span><span class="error_in_saving"> </span></button>
+            	<br /><br />
+            <span class="error_massage"></span>
             <?php wp_nonce_field('coming_soon_options_nonce','coming_soon_options_nonce'); ?>
         </form>
 		<script>
@@ -750,6 +750,7 @@ class coming_soon_admin_menu{
 			
 			
 			jQuery('.add_upload_image_button').click(function(){
+
 					jQuery('.slider_images_div').eq(jQuery('.slider_images_div').length-1).after(jQuery('<div class="slider_images_div"><br><input type="text" class="upload_many_images" size="60" value=""/><input class="upload-button  button button-primary" type="button" value="Upload Image"/><input class="remove_upload_image" type="button" value="Remove"/></div>'))
 			initial_last_element_functions(this);
 			})
@@ -772,9 +773,11 @@ class coming_soon_admin_menu{
 			})
 			 generete_radio_input(jQuery('#coming_soon_page_radio_backroundcolor'));
 			 jQuery('#save_button_design').click(function(){
-					jQuery('body').prepend('<div id="saving_soon"><span id="loading_text"><img src="<?php echo $this->plugin_url.'images/loading_big.gif' ?>" /></span></div>');
-					jQuery('#saving_soon').height(jQuery(window).height());
-					//jQuery('#saving_soon').click(function(){jQuery('#saving_soon').remove()});
+					
+					jQuery('#save_button_design').addClass('padding_loading');
+					jQuery("#save_button_design").prop('disabled', true);
+					jQuery('.saving_in_progress').css('display','inline-block');
+							
 					generete_slider_images();
 					generete_radio_input_hidden(jQuery('#page_content_position'));
 					jQuery.ajax({
@@ -782,21 +785,35 @@ class coming_soon_admin_menu{
 						url: "<?php echo admin_url( 'admin-ajax.php?action=coming_soon_page_save' ); ?>",
 						data: {curent_page:'design',coming_soon_options_nonce:jQuery('#coming_soon_options_nonce').val()<?php foreach($page_parametrs as $key => $value){echo ','.$key.':jQuery("#'.$key.'").val()';} ?>},
 					}).done(function(date) {
-						alert(date)
-					  jQuery('#saving_soon').remove();
+						if(jQuery('#live_prev').length){
+							jQuery('#live_prev').attr('src',jQuery('#live_prev').attr('src')+'&'+Math.floor((Math.random() * 100000) + 1)+'='+Math.floor((Math.random() * 100000) + 1));
+						}
+						if(date=='<?php echo $this->text_parametrs['parametrs_sucsses_saved'] ?>'){
+						jQuery('.saving_in_progress').css('display','none');
+						jQuery('.sucsses_save').css('display','inline-block');
+						setTimeout(function(){jQuery('.sucsses_save').css('display','none');jQuery('#save_button_design').removeClass('padding_loading');jQuery("#save_button_design").prop('disabled', false);},2500);
+						}else{
+							jQuery('.saving_in_progress').css('display','none');
+							jQuery('#coming_soon_options_form .error_in_saving').css('display','inline-block');
+							jQuery('#coming_soon_options_form .error_massage').css('display','inline-block');
+							jQuery('#coming_soon_options_form .error_massage').html(date);
+							setTimeout(function(){jQuery('#coming_soon_options_form .error_massage').css('display','none');jQuery('#coming_soon_options_form .error_in_saving').css('display','none');jQuery('#save_button_design').removeClass('padding_loading');jQuery("#save_button_design").prop('disabled', false);},5000);
+						}
+
 					});
 				});
 
 			jQuery( "#slider-coming_soon_page_content_trasparensy" ).slider({
 				orientation: "horizontal",
 				range: "min",
-				value: <?php echo $page_parametrs['coming_soon_page_content_trasparensy'] ?>,
+				value: 55,
 				min: 0,
 				max: 100,
 				slide: function( event, ui ) {
 					jQuery( "#coming_soon_page_content_trasparensy" ).val( ui.value );
 				}
 			});
+
 			jQuery( "#coming_soon_page_content_trasparensy" ).val(jQuery( "#slider-coming_soon_page_content_trasparensy" ).slider( "value" ) );			 
         });
         function initial_last_element_functions(element_of_add){
@@ -855,18 +872,20 @@ class coming_soon_admin_menu{
 				vertical-align: top;
 				font-family: arial,sans-serif;
 			}
-            
-            </style>
-        <?php 
-		$mailing_lists=json_decode(stripslashes($page_parametrs['users_mailer']),true);
-		if($mailing_lists==null)
-		$mailing_lists=array();
-		foreach($mailing_lists as $email){
-			echo "<span class='mail_user'>".$email."</span>";
+                   
+        .maili_upgarete{
+			display:block;
+			text-decoration:none;
 		}
-		?><br /><br />
+        </style>
+        
+
+            </style>
+            <br /><br />
+            <a class='maili_upgarete' href="http://wpdevart.com/wordpress-coming-soon-plugin/"><span style="color: rgba(10, 154, 62, 1); font-weight: bold; font-size: 21px;">Upgrade to Pro Version</span></a>
+            <br />
         	<form method="post" id="coming_soon_options_form_send_mail" action="admin.php?page='<?php echo  str_replace( ' ', '-', $this->menu_name); ?>'">
-            	<input type="text" value="" placeholder="Message Title" style="width:400px;" id="massage_title" /><br />
+            	<input type="text" value="" placeholder="Message Title" style="width:400px;" id="massage_title" /><br /><br />
                 <textarea id="massage_description" placeholder="Message" style="width:400px; height:300px"></textarea><br /><br /><br />
                 <button type="button" id="send_mailing" class="save_button button button-primary">Send Mail</button>
         	</form>
@@ -874,16 +893,7 @@ class coming_soon_admin_menu{
 		<script>
 			jQuery(document).ready(function(e) {
 				jQuery('#send_mailing').click(function(){
-					jQuery('body').prepend('<div id="saving_soon"><span id="loading_text"><img src="<?php echo $this->plugin_url.'images/loading_big.gif' ?>" /></span></div>');
-					jQuery('#saving_soon').height(jQuery(window).height());
-					jQuery.ajax({
-						type:'POST',
-						url: "<?php echo admin_url( 'admin-ajax.php?action=coming_soon_send_mail' ); ?>",
-						data: {massage_description:jQuery('#massage_description').val(),massage_title:jQuery('#massage_title').val()},
-					}).done(function(date) {
-						alert(date)
-					  jQuery('#saving_soon').remove();
-					});  
+					alert(text_of_upgrate_version);
 				});
 			});       
         </script>
@@ -893,7 +903,7 @@ class coming_soon_admin_menu{
 	public function generete_mailing_live_previev_page(){
 		
 		?>
-        <iframe src="<?php echo site_url(); ?>/?special_variable_for_live_previev=sdfg564sfdh645fds4ghs515vsr5g48strh846sd6g41513btsd" width="100%" height="900px"></iframe>
+        <iframe id="live_prev" src="<?php echo site_url(); ?>/?special_variable_for_live_previev=sdfg564sfdh645fds4ghs515vsr5g48strh846sd6g41513btsd" width="100%" height="900px"></iframe>
         <?php
 	}
 	
