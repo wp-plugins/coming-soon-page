@@ -23,32 +23,20 @@ Coming soon plugin will add some great features to your coming soon page.
 *   **Highly customizable Coming Soon page**
 *   **Ability to change Coming Soon page background color**
 *   **Ability to set Coming Soon page background image**
-*   **Ability to set Coming Soon page Title color**
-*   **Ability to set Coming Soon page Title font size**
 *   **Ability to use WordPress post toolbar for Coming soon page Content**
-*   **Ability to set Coming soon page Content background color**
-*   **Ability to set Coming soon page Content background transparency**
-*   **Ability to set Coming soon page Content background border radius**
 *   **SEO friendly Coming Soon page**
 *   **Set Meta description for your Coming Soon page**
 *   **Set Meta keywords for your Coming Soon page**
 *   **Full browser background option**
-*   **Ability to add Countdown to your Coming Soon page**
 *   **Ability to set full browser background image for you Coming Soon page**
 *   **Ability to control access by IP to Coming Soon page**
 *   **Custom Logo for Coming Soon page**
-*   **Email notifications**
 *   **Social Media Ready**
 *   **Facebook**
-*   **Ability to change Facebook button background image**
 *   **Twitter**
-*   **Ability to change Twitter button background image**
 *   **Google Plus**
-*   **Ability to change Google Plus button background image**
 *   **YouTube**
-*   **Ability to change YouTube button background image**
 *   **Instagram**
-*   **Ability to change Instagram button background image**
 *   **Uses CSS3**
 *   **User friendly back-end for Coming Soon page**
 *   **Tested on popular WordPress themes**
@@ -61,14 +49,27 @@ You can upgrade Coming Soon plugin to [WordPress Coming Soon Pro](http://wpdevar
 *   **Awesome Background Slider for your Coming Soon page**
 *   **Ability to set Coming soon page content position**
 *   **Ability to exclude specific pages, posts  from displaying Coming Soon page**
+*   **Ability to set Coming Soon page Title color**
+*   **Ability to set Coming Soon page Title font size**
+*   **Ability to set Coming soon page Content background color**
+*   **Ability to set Coming soon page Content background transparency**
+*   **Ability to set Coming soon page Content background border radius**
+*   **Email notifications**
 *   **Ability to set Coming Soon page Mailing list button background color**
 *   **Ability to set Coming Soon page Mailing list button text color**
 *   **Ability to set Coming Soon page Mailing list input text color**
 *   **Ability to set Coming Soon page Mailing list button and input font-size**
+*   **Ability to add Countdown to your Coming Soon page**
 *   **Ability to set Coming Soon page Countdown button background color**
 *   **Ability to set Coming Soon page Countdown button border radius**
 *   **Ability to set Coming Soon page Countdown text color**
 *   **Ability to set Coming Soon page Countdown font-size**
+*   **Ability to change Facebook button background image**
+*   **Ability to change Twitter button background image**
+*   **Ability to change Google Plus button background image**
+*   **Ability to change YouTube button background image**
+*   **Ability to change Instagram button background image**
+
 
 ### View our Coming Soon plugin Demo page - [Coming soon Demo](http://democomingsoon.wpdevart.com/)
 

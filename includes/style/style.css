@@ -1,284 +1,127 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
-	font-weight:inherit;
-	font-style:inherit;
-	font-size:100%;
-	font-family:inherit;
-	vertical-align:baseline;
+body{
+   margin:0px;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
-body {
-	line-height:1 !important;
-	color:black;
-	background:white;
+#title_style h1{	
+	font-size: 55px;
+	padding: 0px;
+	margin: 5px 0px 5px 0px;
 }
-table {
-	border-collapse:separate;
-	border-spacing:0;
+#descrip{
+	margin: 5px 0px 5px 0px;
 }
-caption, th, td {
-	text-align:left;
-	font-weight:normal;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content:"";
-}
-blockquote, q {
-	quotes:"" "";
-}
-/* HTML5 tags */
-header, section, footer,
-aside, nav, article, figure {
-	display: block;
-}
-
-/*===================*/
-/*=== Main Styles ===*/
-/*===================*/
-body {
-	font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	color:#333;
-	background:#eee;
-}
-
-a, a:visited {
-	color:blue;
-	text-decoration:none;
-}
-a:hover, a:active {
-	color:#000;
-	text-decoration:none;
-}
-
-#dev7link {
-    position:absolute;
-    top:0;
-    left:50px;
-    background:url(images/dev7logo.png) no-repeat;
-    width:60px;
-    height:67px;
-    border:0;
-    display:block;
-    text-indent:-9999px;
-}
-
-.slider-wrapper { 
-	width: 100%; 
-	height:100%;
-}
-
-/*====================*/
-/*=== Other Styles ===*/
-/*====================*/
-.clear {
-	clear:both;
-}
-.nivoSlider {
-	position:relative;
-	width:100%;
-	height:auto;
-	overflow: hidden;
-}
-.nivoSlider img {
-	position:absolute;
-	top:0px;
-	left:0px;
-	max-width: none;
-}
-.nivo-main-image {
-	display: block !important;
-	position: relative !important; 
-	width: 100% !important;
-}
-
-/* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink {
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:100%;
-	border:0;
-	padding:0;
-	margin:0;
-	z-index:6;
-	display:none;
-	background:white; 
-	filter:alpha(opacity=0); 
-	opacity:0;
-}
-/* The slices and boxes in the Slider */
-.nivo-slice {
-	display:block;
-	position:absolute;
-	z-index:5;
-	height:100%;
-	top:0;
-}
-.nivo-box {
-	display:block;
-	position:absolute;
-	z-index:5;
-	overflow:hidden;
-}
-.nivo-box img { display:block; }
-
-/* Caption styles */
-.nivo-caption {
-	position:absolute;
-	left:0px;
-	bottom:0px;
-	background:#000;
-	color:#fff;
-	width:100%;
-	z-index:8;
-	opacity: 0.8;
-	overflow: hidden;
-	display: none;
-	-moz-opacity: 0.8;
-	filter:alpha(opacity=8);
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
-}
-.nivo-caption p {
-	padding:5px;
-	margin:0;
-}
-.nivo-caption a {
-	display:inline !important;
-}
-.nivo-html-caption {
-    display:none;
-}
-/* Direction nav styles (e.g. Next & Prev) */
-.nivo-directionNav a {
-	position:absolute;
-	top:45%;
-	z-index:9;
-	cursor:pointer;
-}
-.nivo-prevNav {
-	left:0px;
-}
-.nivo-nextNav {
-	right:0px;
-}
-/* Control nav styles (e.g. 1,2,3...) */
-.nivo-controlNav {
-	text-align:center;
-	padding: 15px 0;
-}
-.nivo-controlNav a {
-	cursor:pointer;
-}
-.nivo-controlNav a.active {
-	font-weight:bold;
-}.theme-default .nivoSlider {
-	position:relative;
-}
-.theme-default .nivoSlider img {
-	position:absolute;
-	top:0px;
-	left:0px;
-	display:none;
-}
-.theme-default .nivoSlider a {
-	border:0;
-	display:block;
-}
-
-.theme-default .nivo-controlNav {
-	text-align: center;
-}
-.theme-default .nivo-controlNav a {
+.soc_icon_coneiner{
 	display:inline-block;
-	width:22px;
-	height:22px;
-	background:url(bullets.png) no-repeat;
-	text-indent:-9999px;
-	border:0;
-	margin: 0 2px;
-}
-.theme-default .nivo-controlNav a.active {
-	background-position:0 -22px;
-}
-
-.theme-default .nivo-directionNav a {
-	display:block;
-	text-indent:-9999px;
-	border:0;
-}
-
-.nivo-prevNav{
-	background: url(Arrow-left.png);
-background-repeat: no-repeat;
-width: 50px;
-height: 75px;
-}
-.nivo-nextNav{
-background: url(Arrow-right.png);
-background-repeat: no-repeat;
-width: 31px;
-height: 75px;
-}
-.theme-default a.nivo-prevNav {
-	left:15px;
-}
-.theme-default .nivo-caption {
-    font-family: Helvetica, Arial, sans-serif;
-}
-.theme-default .nivo-caption a {
-    color:#fff;
-    border-bottom:1px dotted #fff;
-}
-.theme-default .nivo-caption a:hover {
-    color:#fff;
-}
-
-.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+	margin-top:2%;
 	width: 100%;
 }
-.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
-	width: auto;
-	height: auto;
-	background: none;
-	margin-bottom: 5px;
+.soc_icon_coneiner .soc_icon{
+	display: inline-block;
+	margin-left: 3%;
+	margin-right: 3%;
 }
-.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
-	display: block;
-	width: 120px;
-	height: auto;
+
+.soc_icon_coneiner .soc_icon img{
+	width:100%;				
+	max-height:82px;
 }
-.hero-unit{
-	position:absolute;
-	z-index:9999;
-	width:100%;
+.countdown > div{
+	margin-top:2%;
+	float:left;
+	color:#fff;
+	font-size:48px;
+	font-weight:bold;
+}
+.element_conteiner{
+	width:150px;
+	display: inline-block;					
+}
+.time_left{
+	border:none;
+	border-radius:8px;
+	background-color:#3DA8CC;
+	font-size:30px;
+	color:#000000;
+	padding-bottom: 4%;
+	padding-top: 5%;
+	padding-left: 25%;
+	padding-right: 25%;
+	font-weight:bold;
+	font-family: monospace;
 	
 }
-#user_loading_and_saving{
-	padding-top:10px;
-	
+.time_description{
+	margin-top:6px;
+	margin-bottom:6px;
+	font-size:25px;
+	color:#000000;
+	font-weight:bold;
+	font-family: monospace;
+}
+.information{
+	padding-bottom: 20px;
+	margin-bottom: -20px;
+	padding-top: 20px;
+	margin-top: -20px;
+
+	background: rgba(255,255,255,0.55);
+	border-radius:8px;
+	width: 51%;
+	/*height:71.5%;*/
+	display:inline-block;
+	z-index:999999;
+	max-width:750px;
+	width:100%;					
+}
+
+.information #logo img{
+	max-height:210px;					
+}
+
+#main_inform_div{
+	display:table;
+	padding:10px;
+}
+#user_email{
+	font-size:25px;
+	border-radius:8px;
+	color:#000000;
+	width: 90%;
+	max-width: 350px;
+	padding-left:8px;
+	padding-top: 6px;
+	padding-bottom: 3px;
+	font-family: monospace;
 }
 .information_user{
-	font-size: 25px;
-	font-style: italic;
-	min-height:37px;
+	margin-top:10px;
+	color:#FFFFFF;
+	font-size:25px;
+	font-weight:bold;
 }
-.error{
-	color: #C72B2B;
-	font-size: 25px;
-	font-style: italic;
-	font-weight: bold;
+#Send_mail_button{
+cursor:pointer;
+	margin-top:8px;
+	border:none;
+	border-radius:8px;
+	background-color:#3DA8CC;
+	font-size:25px;
+	color:#000000;
+	padding-bottom: 5px;
+	padding-top: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-weight:bold;
+	font-family: monospace;
 }
-				
+
+#slider{
+	left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 680px; width: 1903px; z-index: -999999; position: fixed;
+}
+.aligment{
+	display:table-cell;
+	width: 10%;
+}

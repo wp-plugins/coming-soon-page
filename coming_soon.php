@@ -63,9 +63,11 @@ class coming_soon_main{
 	}
 	
 	public function registr_requeried_scripts(){
+		wp_register_script('coming-soon-script',$this->coming_soon_plugin_url.'includes/javascript/front_end_js.js');
 		wp_register_script('background_coming',$this->coming_soon_plugin_url.'includes/javascript/background.js');
 		wp_register_style('jquery-ui-style',$this->coming_soon_plugin_url.'includes/style/jquery-ui-style.css');
 		wp_register_style('coming-soon-admin-style',$this->coming_soon_plugin_url.'includes/style/admin-style.css');
+		wp_register_style('coming-soon-style',$this->coming_soon_plugin_url.'includes/style/style.css');
 	}
 	
 	public function call_base_filters(){
