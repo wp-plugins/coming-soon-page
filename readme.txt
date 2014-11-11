@@ -84,6 +84,7 @@ Installing the WordPress **Coming Soon** plugin
 2. Go to Plugins page Add New > Upload Plugin .    
 3. Click "Choose file" then select the Coming Soon plugin  zip file. 
 4. Then Install and activate the plugin.     
+5. Then, from the left panel of Dashboard, click on the gear icon - Coming Soon link to fully customize the plugin
 
 That's all, now you can build your Coming soon page. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
