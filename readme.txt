@@ -1,5 +1,5 @@
-=== Coming soon ===
-Contributors: wpdevart
+=== Coming soon and Maintenance mode ===
+Contributors: wpdevart, big ben keeper, maintenance mode GG
 Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
 Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta 
 Requires at least: 3.4.0
