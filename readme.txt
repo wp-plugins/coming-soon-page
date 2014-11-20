@@ -8,14 +8,14 @@ Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Coming soon plugin is awesome tool to show your users that you are working on your website to make it better.   
+Coming soon and Maintenance mode plugin is awesome tool to show your users that you are working on your website to make it better.   
 
 == Description ==
 
 It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.Our coming soon plugin is the best way to create better coming soon page.
 Coming soon plugin will add some great features to your coming soon page. 
 
-### Features of Coming Soon plugin
+### Features of Coming soon and Maintenance mode plugin
 
 *   **Easy install and use**
 *   **Works perfectly with all versions of WordPress**
@@ -42,9 +42,9 @@ Coming soon plugin will add some great features to your coming soon page.
 *   **Tested on popular WordPress themes**
 *   **Coming soon page visible only non logged in users**
 
-You can upgrade Coming Soon plugin to [WordPress Coming Soon Pro](http://wpdevart.com/wordpress-coming-soon-plugin) to add some features.
+You can upgrade Coming Soon plugin to WordPress [Coming soon and Maintenance mode Pro](http://wpdevart.com/wordpress-coming-soon-plugin) to add some features.
 
-### The features of Coming Soon Pro
+### The features of Coming soon and Maintenance mode Pro
 
 *   **Awesome Background Slider for your Coming Soon page**
 *   **Ability to set Coming soon page content position**
@@ -77,7 +77,7 @@ You can upgrade Coming Soon plugin to [WordPress Coming Soon Pro](http://wpdevar
 
 == Installation ==
 
-### First download the Coming Soon plugin ZIP file.  
+### First download the Coming Soon and Maintenance mode plugin ZIP file.  
 Installing the WordPress **Coming Soon** plugin  
 
 1. Log in to your website administration panel.   
@@ -90,12 +90,12 @@ That's all, now you can build your Coming soon page. If any problem occurs, cont
 
 == Screenshots ==
 
-1.  **WordPress Coming** soon page Front-end    
-2.  **WordPress Coming** soon page Back-end(General settings)     
-3.  **WordPress Coming** soon page Back-end(General settings)     
-4.  **WordPress Coming** soon page Back-end(Design Options)     
-5.  **WordPress Coming** soon page Mailing list     
-6.  **WordPress Coming** soon page Live preview     
+1.  **WordPress Coming soon and Maintenance mode** Front-end    
+2.  **WordPress Coming soon and Maintenance mode** Back-end(General settings)     
+3.  **WordPress Coming soon and Maintenance mode** Back-end(General settings)     
+4.  **WordPress Coming soon and Maintenance mode** Back-end(Design Options)     
+5.  **WordPress Coming soon and Maintenance mode** Mailing list     
+6.  **WordPress Coming soon and Maintenance mode** Live preview     
 
 == Changelog ==
 
