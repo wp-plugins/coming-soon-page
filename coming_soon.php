@@ -2,9 +2,9 @@
 /**
  * Plugin Name: Coming Soon wpdevart
  * Plugin URI: http://wpdevart.com/wordpress-coming-soon-plugin
- * Description: Coming soon page plugin is awesome tool to show your users that you are working on your website to make it better. Our coming soon plugin is the best way to create better coming soon page.  
+ * Description: Coming soon and Maintenance mode plugin is awesome tool to show your users that you are working on your website to make it better. Our coming soon plugin is the best way to create better coming soon page.  
  * Version: 1.0.1
- * Author: wpdevart
+ * Author: wpdevart, big ben keeper, maintenance mode GG
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
  
