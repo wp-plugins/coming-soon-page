@@ -12,8 +12,8 @@ Coming soon and Maintenance mode plugin is awesome tool to show your users that 
 
 == Description ==
 
-It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.Our coming soon plugin is the best way to create better coming soon page.
-Coming soon plugin will add some great features to your coming soon page. 
+It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.Our coming soon and Maintenance mode plugin is the best way to create better coming soon page.
+Coming soon and Maintenance mode plugin will add some great features to your coming soon page. 
 
 ### Features of Coming soon and Maintenance mode plugin
 
@@ -38,11 +38,11 @@ Coming soon plugin will add some great features to your coming soon page.
 *   **YouTube**
 *   **Instagram**
 *   **Uses CSS3**
-*   **User friendly back-end for Coming Soon page**
+*   **User friendly back-end for Coming Soon and Maintenance mode plugin**
 *   **Tested on popular WordPress themes**
 *   **Coming soon page visible only non logged in users**
 
-You can upgrade Coming Soon plugin to WordPress [Coming soon and Maintenance mode Pro](http://wpdevart.com/wordpress-coming-soon-plugin) to add some features.
+You can upgrade WordPress Coming Soon and Maintenance mode plugin to [Coming soon and Maintenance mode Pro](http://wpdevart.com/wordpress-coming-soon-plugin) to add some features.
 
 ### The features of Coming soon and Maintenance mode Pro
 
@@ -71,14 +71,14 @@ You can upgrade Coming Soon plugin to WordPress [Coming soon and Maintenance mod
 *   **Ability to change Instagram button background image**
 
 
-### View our Coming Soon plugin Demo page - [Coming soon Demo](http://democomingsoon.wpdevart.com/)
+### View our Coming Soon and Maintenance mode plugin Demo page - [Coming soon and Maintenance mode Demo](http://democomingsoon.wpdevart.com/)
 
-### If you found any bug in our [WordPress Coming soon](http://wpdevart.com/wordpress-coming-soon-plugin) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
+### If you found any bug in our [WordPress Coming soon and Maintenance mode](http://wpdevart.com/wordpress-coming-soon-plugin) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
 == Installation ==
 
 ### First download the Coming Soon and Maintenance mode plugin ZIP file.  
-Installing the WordPress **Coming Soon** plugin  
+Installing the WordPress **Coming Soon and Maintenance mode** plugin  
 
 1. Log in to your website administration panel.   
 2. Go to Plugins page Add New > Upload Plugin .    
