@@ -1,7 +1,7 @@
 === Coming soon and Maintenance mode ===
 Contributors: maintenance mode GG, wpdevart, big ben keeper
 Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
-Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta 
+Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode  
 Requires at least: 3.4.0
 Tested up to: 4.0
 Stable tag: 1.0.1
@@ -75,6 +75,11 @@ You can upgrade WordPress Coming Soon and Maintenance mode plugin to [Coming soo
 
 ### If you found any bug in our [WordPress Coming soon and Maintenance mode](http://wpdevart.com/wordpress-coming-soon-plugin) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
+The Coming Soon and Maintenance mode plugin allows you to create Coming Soon page for your website simply and quickly. You just need to enable the Coming Soon Mode to change your website to Maintenance mode. 
+
+The Coming Soon and Maintenance mode plugin plugin works without any problem with all popular WordPress themes that we tested, so you can use our Coming Soon and Maintenance mode plugin on any theme you like, if something goes wrong just let us know about it.
+Logged out users of your website will see the Maintenance mode while logged-in users will have access to your website. Maintenance mode is ideal solution for web developers who want to show their clients that website is in Maintenance mode while they working on the website.
+
 == Installation ==
 
 ### First download the Coming Soon and Maintenance mode plugin ZIP file.  
@@ -115,15 +120,15 @@ That's all, now you can build your Coming soon page and run website to Maintenan
 *   Massage - Here you can type the massage that will appear on your coming soon page.
 *   Keywords - Type your Coming Soon page meta keywords.
 *   Description - Type your Coming Soon page meta description.
-*   Countdown - Type the time to activate  the countdown.
+*   Countdown - Type the time to activate the countdown for Maintenance mode.
 *   Disable coming soon page after countdown end - If you choose this option, then your coming soon page will be Enabled after countdown end.
 *   Disable coming soon page for this ips - Just type here users ip's who can access to you website.
 *   Disable coming soon page for this urls - You can exclude specific url's from displaying Coming Soon page.
-*   Facebook - Type here your Facebook page url.
-*   Twitter - Type here your Twitter page url.
-*   Google Plus - Type here your Google Plus page url.
-*   YouTube - Type here your YouTube page url.
-*   Instagram - Type here your Instagram page url.
+*   Facebook - Type here your Facebook page url, when website is on Maintenance mode.
+*   Twitter - Type here your Twitter page url, when website is on Maintenance mode.
+*   Google Plus - Type here your Google Plus page url, when website is on Maintenance mode.
+*   YouTube - Type here your YouTube page url, when website is on Maintenance mode.
+*   Instagram - Type here your Instagram page url, when website is on Maintenance mode.
 
 The second option page is "Design Options" . On this page you can change your Coming Soon page design.
 
