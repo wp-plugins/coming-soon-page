@@ -75,6 +75,7 @@ You can upgrade WordPress Coming Soon and Maintenance mode plugin to [Coming soo
 
 ### If you found any bug in our [WordPress Coming soon and Maintenance mode](http://wpdevart.com/wordpress-coming-soon-plugin) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
+
 The Coming Soon and Maintenance mode plugin allows you to create Coming Soon page for your website simply and quickly. You just need to enable the Coming Soon Mode to change your website to Maintenance mode. 
 
 The Coming Soon and Maintenance mode plugin plugin works without any problem with all popular WordPress themes that we tested, so you can use our Coming Soon and Maintenance mode plugin on any theme you like, if something goes wrong just let us know about it.
