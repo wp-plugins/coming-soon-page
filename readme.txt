@@ -1,7 +1,7 @@
 === Coming soon and Maintenance mode ===
 Contributors: maintenance mode GG, wpdevart, big ben keeper
 Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
-Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode, bing, google   
+Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode, google, bing  
 Requires at least: 3.4.0
 Tested up to: 4.0
 Stable tag: 1.0.1
@@ -81,6 +81,8 @@ The Coming Soon and Maintenance mode plugin allows you to create Coming Soon pag
 The Coming Soon and Maintenance mode plugin plugin works without any problem with all popular WordPress themes that we tested, so you can use our Coming Soon and Maintenance mode plugin on any theme you like, if something goes wrong just let us know about it.
 Logged out users of your website will see the Maintenance mode while logged-in users will have access to your website. Maintenance mode is ideal solution for web developers who want to show their clients that website is in Maintenance mode while they working on the website.
 
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box/) .
+
 == Installation ==
 
 ### First download the Coming Soon and Maintenance mode plugin ZIP file.  
@@ -88,16 +90,18 @@ Installing the WordPress **Coming Soon and Maintenance mode** plugin
 
 1. Log in to your website administration panel.   
 2. Go to Plugins page Add New > Upload Plugin .    
-3. Click "Choose file" then select the Coming Soon and Maintenance mode plugin  zip file. 
-4. Then Install and activate the plugin.     
+3. Click "Choose file" then select the [WordPress Coming Soon](https://wordpress.org/plugins/coming-soon-page/) and Maintenance mode plugin zip file. 
+4. Then Install and activate our [WordPress Maintenance mode](https://wordpress.org/plugins/coming-soon-page/) plugin.     
 5. Then, from the left panel of Dashboard, click on the gear icon - Coming Soon link to fully customize the plugin
 	  
 That's all, now you can build your Coming soon page and run website to Maintenance mode. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box/) .
+
 == Screenshots ==
 
-1.  **WordPress Coming soon and Maintenance mode** Front-end    
-2.  **WordPress Coming soon and Maintenance mode** Back-end(General settings)     
+1.  **[WordPress Maintenance mode](https://wordpress.org/plugins/coming-soon-page/) and Coming soon** Front-end    
+2.  **[WordPress Coming soon](https://wordpress.org/plugins/coming-soon-page/) and Maintenance mode** Back-end(General settings)     
 3.  **WordPress Coming soon and Maintenance mode** Back-end(General settings)     
 4.  **WordPress Coming soon and Maintenance mode** Back-end(Design Options)     
 5.  **WordPress Coming soon and Maintenance mode** Mailing list     
@@ -135,7 +139,7 @@ The second option page is "Design Options" . On this page you can change your Co
 
 ### Coming Soon page design options
 
-*   Coming soon page backround type - Select Coming Soon plugin backround mode. There are tree background types, the first type is simple background color, second type is backround with image and the last type is background Slider.
+*   Coming soon page backround type - Select [WordPress Coming soon](https://wordpress.org/plugins/coming-soon-page/) plugin backround mode. There are tree background types, the first type is simple background color, second type is backround with image and the last type is background Slider.
 *   Background Color - Select Coming Soon page background color.
 *   Background image - Upload Coming Soon page background image.
 *   Backround slider -  Upload Coming Soon page background slider images.
@@ -161,4 +165,6 @@ The second option page is "Design Options" . On this page you can change your Co
 *   Instagram button background image - Upload your button for Instagram or just use our default Instagram button.
 
 The third option page is "Mailing list" . On this page you can type Sendmail Message text and send Message to users.
-The last option page is "Live Preview" . Here you can see your Coming soon page live preview.
+The last option page of our [WordPress Maintenance mode](https://wordpress.org/plugins/coming-soon-page/) plugin is "Live Preview" . Here you can see your Coming soon page live preview.
+
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box/) .
