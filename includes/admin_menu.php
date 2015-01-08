@@ -196,7 +196,7 @@ class coming_soon_admin_menu{
             <a id="options-group-1-tab" class="nav-tab" title="SEO" href="#options-group-1">General Settings</a>
             <a id="options-group-2-tab" class="nav-tab" title="Layout Editor" href="#options-group-2">Design Option</a>
             <a id="options-group-3-tab" class="nav-tab" title="General" href="#options-group-3">Mailing List <span class='pro_subtitle_span'><?php echo $this->text_parametrs['get_pro_version_subtitle'] ?></span></a>
-            <a id="options-group-4-tab" class="nav-tab" title="Homepage" href="#options-group-4">Liev Preview</a>
+            <a id="options-group-4-tab" class="nav-tab" title="Homepage" href="#options-group-4">Live Preview</a>
 			<a id="options-group-4-tab" class="nav-tab" title="Homepage" href="http://wpdevart.com/wordpress-coming-soon-plugin/"><span style="color: rgba(10, 154, 62, 1); font-weight: bold; font-size: 21px;">Upgrade to Pro Version</span></a>
 
         </h2>

@@ -1,10 +1,10 @@
 === Coming soon and Maintenance mode ===
 Contributors: maintenance mode GG, wpdevart, big ben keeper
 Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
-Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode, google, bing  
+Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode   
 Requires at least: 3.4.0
 Tested up to: 4.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -109,8 +109,17 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
+
 *  Initial version.
+
+= 1.0.1 =
+
+*  Bug fixed
+
+= 1.0.2 =
+
+*  Bug fixed
 
 ==Wordpress Coming soon step by step guide==
 
