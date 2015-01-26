@@ -71,9 +71,10 @@ You can upgrade WordPress Coming Soon and Maintenance mode plugin to [Coming soo
 *   **Ability to change Instagram button background image**
 
 
-### View our Coming Soon and Maintenance mode plugin Demo page - [Coming soon and Maintenance mode Demo](http://democomingsoon.wpdevart.com/)
+### View our Coming Soon and Maintenance mode plugin Demo page: 
+[Coming soon and Maintenance mode Demo](http://democomingsoon.wpdevart.com/)
 
-### If you found any bug in our [WordPress Coming soon and Maintenance mode](http://wpdevart.com/wordpress-coming-soon-plugin) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
+### If you found any bug in our WordPress Coming soon and Maintenance mode plugin or have a question contact us at support@wpdevart.com.
 
 
 The Coming Soon and Maintenance mode plugin allows you to create Coming Soon page for your website simply and quickly. You just need to enable the Coming Soon Mode to change your website to Maintenance mode. 
