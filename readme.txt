@@ -104,7 +104,7 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 1.  **[WordPress Maintenance mode](https://wordpress.org/plugins/coming-soon-page/) and Coming soon** Front-end    
 2.  **[WordPress Coming soon](https://wordpress.org/plugins/coming-soon-page/) and Maintenance mode** Back-end(General settings)     
 3.  **WordPress Coming soon and Maintenance mode** Back-end(General settings)     
-4.  **WordPress Coming soon and Maintenance mode** Back-end(Design Options)     
+4.  **WordPress Coming soon and Maintenance mode** Back-end(Design settings)     
 5.  **WordPress Coming soon and Maintenance mode** Mailing list     
 6.  **WordPress Coming soon and Maintenance mode** Live preview     
 
