@@ -5,6 +5,7 @@
  * Description: Coming soon and Maintenance mode plugin is awesome tool to show your users that you are working on your website to make it better. Our coming soon plugin is the best way to create better coming soon page.  
  * Version: 1.0.2
  * Author: maintenance mode GG, wpdevart, big ben keeper
+ * Author URI:    http://wpdevart.com
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
  
