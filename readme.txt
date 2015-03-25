@@ -45,7 +45,7 @@ You can upgrade WordPress Coming Soon and Maintenance mode plugin to [Coming soo
 ### The features of Coming soon and Maintenance mode Pro
 
 *   **Awesome Background Slider your Coming Soon page**
-*   **Nice Video(YouTube) background your Coming Soon page**
+*   **Nice Video(YouTube) background your Coming Soon page(Not for mobile devices)**
 *   **Functional Subscribe Form**
 *   **Elegant Countdown for coming soon page**
 *   **3 beautiful and different Countdown designs(button, circle, vertical slider)**
@@ -127,11 +127,10 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 == Screenshots ==
 
 1.  **WordPress Maintenance mode and Coming soon** Front-end    
-2.  **[WordPress Coming soon](https://wordpress.org/plugins/coming-soon-page/) and Maintenance mode** Back-end(General settings)     
-3.  **WordPress Coming soon and Maintenance mode** Back-end(General settings)     
-4.  **WordPress Coming soon and Maintenance mode** Back-end(Design settings)     
-5.  **WordPress Coming soon and Maintenance mode** Mailing list     
-6.  **WordPress Coming soon and Maintenance mode** Live preview     
+2.  **[WordPress Coming soon](https://wordpress.org/plugins/coming-soon-page/) and Maintenance mode** Back-end     
+3.  **WordPress Coming soon and Maintenance mode** Back-end     
+4.  **WordPress Coming soon and Maintenance mode** Back-end     
+   
 
 == Changelog ==
 
@@ -146,6 +145,10 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 = 1.0.2 =
 
 *  Bug fixed
+
+= 2.0.0 =
+
+*  Added new features and fixed bugs
 
 ==Wordpress Coming soon step by step guide==
 
@@ -185,6 +188,10 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 ### WordPress Coming Soon and Maintenance Mode - Countdown 
 
 *   Show/Hide Countdown - Choose to show or hide Countdown on Coming soon page. 
+*   Text for Day field - Type here default text for Day field.
+*   Text for Hour field - Type here default text for Hour field.
+*   Text for Minute field - Type here default text for Minute field.
+*   Text for Second field - Type here default text for Second field.
 *   Countdown date - Type here the Countdown time(days, hour), then select the Countdown start date. 
 *   After Countdown expired - Choose what will happens with your coming soon page when Countdown expired(Disable comig soon or only hide Countdown). 
 *   Countdown position - Choose position for countdown(Left, Center, Right).
@@ -196,7 +203,7 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 *   Countdown background color  - Select the countdown background color.
 *   Countdown border radius - Type here the countdown buttons border radius.
 *   Countdown Size - Select the countdown size.
-*   Countdown border width - Select the countdown border width for circle buttons(only aapears when you choose Countedown circle buttons).
+*   Countdown border width - Select the countdown border width for circle buttons(only apears when you choose Countdown circle buttons).
 *   Countdown font-size - Type here the countedow text font-size.
 *   Countdown Font family - Select the countdown text Font family.
 
