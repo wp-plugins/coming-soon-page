@@ -3,9 +3,8 @@
  * Plugin Name: Coming soon and Maintenance mode WpDevArt
  * Plugin URI: http://wpdevart.com/wordpress-coming-soon-plugin
  * Description: Coming soon and Maintenance mode plugin is awesome tool to show your users that you are working on your website to make it better. Our coming soon plugin is the best way to create better coming soon page.  
- * Version: 1.0.2
+ * Version: 2.0.0
  * Author: maintenance mode GG, wpdevart, big ben keeper
- * Author URI:    http://wpdevart.com
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
  
@@ -65,10 +64,12 @@ class coming_soon_main{
 	
 	public function registr_requeried_scripts(){
 		wp_register_script('coming-soon-script',$this->coming_soon_plugin_url.'includes/javascript/front_end_js.js');
-		wp_register_script('background_coming',$this->coming_soon_plugin_url.'includes/javascript/background.js');
+		wp_register_script('angularejs',$this->coming_soon_plugin_url.'includes/javascript/angular.min.js');
+		wp_register_script('coming-soon-script-admin',$this->coming_soon_plugin_url.'includes/javascript/admin_coming_soon.js');
 		wp_register_style('jquery-ui-style',$this->coming_soon_plugin_url.'includes/style/jquery-ui-style.css');
 		wp_register_style('coming-soon-admin-style',$this->coming_soon_plugin_url.'includes/style/admin-style.css');
 		wp_register_style('coming-soon-style',$this->coming_soon_plugin_url.'includes/style/style.css');
+		
 	}
 	
 	public function call_base_filters(){
