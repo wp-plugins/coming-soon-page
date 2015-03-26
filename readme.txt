@@ -15,7 +15,9 @@ Coming soon and Maintenance mode plugin is an awesome tool to show your visitors
 It's not easy to create coming soon page for WordPress without coding knowledge. That's why our team do his best to help WordPress users to create coming soon pages easily and quickly.Our coming soon and Maintenance mode plugin is the best way to create better coming soon page.
 
 ### View our Coming Soon and Maintenance mode plugin Demo page: 
-[Coming soon and Maintenance mode Demo](http://democomingsoon.wpdevart.com/)
+
+[Demo 1](http://democomingsoon.wpdevart.com/)
+[Demo 2](http://democs.wpdevart.com/)
 
 Coming soon and Maintenance mode plugin will add some great features to your coming soon page. 
 
