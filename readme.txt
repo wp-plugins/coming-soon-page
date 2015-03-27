@@ -1,7 +1,7 @@
 === Coming soon and Maintenance mode ===
 Contributors: maintenance mode GG, wpdevart, big ben keeper
 Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
-Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode, yahoo   
+Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode, bing   
 Requires at least: 3.4.0
 Tested up to: 4.1.1
 Stable tag: 2.0.0
@@ -46,13 +46,13 @@ You can upgrade WordPress Coming Soon and Maintenance mode plugin to [Coming soo
 
 ### The features of Coming soon and Maintenance mode Pro
 
-*   **Awesome Background Slider your Coming Soon page**
-*   **Nice Video(YouTube) background your Coming Soon page(Not for mobile devices)**
+*   **Awesome Background Slider for Coming Soon page**
+*   **Nice Video(YouTube) background for Coming Soon page(Not for mobile devices)**
 *   **Functional Subscribe Form**
 *   **Elegant Countdown for coming soon page**
 *   **3 beautiful and different Countdown designs(button, circle, vertical slider)**
-*   **39 awsome animation effects for Countdown and Subscribe Form**
-*   **Ability to set Animation waiting time for Countdown and Subscribe Form**
+*   **39 awesome animation effects for all elements**
+*   **Ability to set Animation waiting time for all elements**
 *   **Ability to exclude specific pages, posts from displaying Coming Soon page**
 *   **Functionality to hide Countdown or disable coming soon page when Countdown time expired**
 *   **Ability to set Countdown position(left, center, right)**
@@ -76,7 +76,7 @@ You can upgrade WordPress Coming Soon and Maintenance mode plugin to [Coming soo
 *   **Ability to set Logo position and distance from top**
 *   **Ability to set max width and max height for Logo**
 *   **Ability to set Title color, distance from top and position**
-*   **Ability to set Title Font Size and Font family*
+*   **Ability to set Title Font Size and Font family**
 *   **Ability to set Message position(left, center, right)**
 *   **Ability to set Message distance from top**
 *   **Ability to Progress bar to coming soon page**
@@ -123,6 +123,22 @@ Installing the WordPress **Coming Soon and Maintenance mode** plugin
 5. Then, from the left panel of Dashboard, click on the gear icon - Coming Soon link to fully customize the plugin
 	  
 That's all, now you can build your Coming soon page and run website to Maintenance mode. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
+
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box/),  [Lightbox WordPress](https://wordpress.org/plugins/wp-lightbox-2), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player) .
+
+== Frequently Asked Questions ==
+
+Our Coming soon and Maintenance mode is a user friendly plugin, but here you can see some frequently asked questions that will help you.
+
+= Why I don't see my coming soon page =
+
+1. First of all log out from your admin panel(or check coming soon page using other browser).
+2. Clear your cache.
+3. Clear your website cache(If you use cache plugin, then just clear it)
+
+= Why coming soon video background doesn't work on mobile =
+
+Android doesn't allow set autoplay functionality on YouTube embedded videos, so it's not our fault.
 
 We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box/),  [Lightbox WordPress](https://wordpress.org/plugins/wp-lightbox-2), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player) .
 
