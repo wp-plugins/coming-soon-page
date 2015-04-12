@@ -1495,7 +1495,7 @@ class coming_soon_admin_menu{
                                 <option  value="center-top">Top center</option>
                                 <option selected="selected"  value="center-middle">Middle center</option>
                                 <option  value="center-bottom">Bottom center</option>
-                                <option  value="right-top">Top rightp</option>
+                                <option  value="right-top">Top right</option>
                                 <option  value="right-middle">Middle right</option>
                                 <option  value="right-bottom">Bottom right</option>    
                             </select>
