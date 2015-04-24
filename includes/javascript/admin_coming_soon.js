@@ -290,8 +290,8 @@ jQuery(document).ready(function(e) {
 			orientation: "horizontal",
 			range: "min",
 			value: curent_value,
-			min: min_value,
-			max: max_value,
+			min: parseInt(min_value),
+			max: parseInt(max_value),
 			slide: function( event, ui ) {
 				if(jQuery(loc_this).hasClass('pro_input')){
 					alert("If you want to use this feature upgrade to Coming soon Pro");
