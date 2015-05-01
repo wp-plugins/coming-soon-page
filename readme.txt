@@ -135,6 +135,7 @@ Our Coming soon and Maintenance mode is a user friendly plugin, but here you can
 1. First of all log out from your admin panel(or check coming soon page using other browser).
 2. Clear your cache.
 3. Clear your website cache(If you use cache plugin, then just clear it)
+4. Check the Countdown. If Countdown date expired and you have selected this option "After Countdown expired - Disable coming soon", then the coming soon page will disappear. 
 
 = Why coming soon video background doesn't work on mobile =
 
