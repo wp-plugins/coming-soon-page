@@ -201,7 +201,7 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 *   Title - Type here coming soon page Title.
 *   Title color - Select the title color.
 *   Title Font Size - Type here your coming soon page title font size.
-*   Title Font family - Choose font family for title.
+*   Title Font family - Choose the font family for title.
 *   Title position - Choose your coming soon page Title position(Left, Center, Right).
 *   Distance from top - Type here Title field distance from top.
 *   Title Animation type -  Choose animation type for Title.
