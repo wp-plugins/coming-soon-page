@@ -109,9 +109,6 @@ class coming_soon_front_end{
 	/*################################################################################### Except Page ###########################################################################*/	
 	private function is_in_except(){
 		$ips=json_decode(stripslashes($this->params['coming_soon_page_showed_ips']), true);
-		$urls=json_decode(stripslashes($this->params['coming_soon_page_showed_urls']), true);
-		if(!$urls)
-			$urls=array();
 		if(!$ips)
 			$ips=array();
 		$in_list = in_array($this->get_real_ip(), $ips) && 1;	
