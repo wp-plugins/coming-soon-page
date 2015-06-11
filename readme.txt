@@ -119,7 +119,7 @@ Installing the WordPress **Coming Soon and Maintenance mode** plugin
 1. Log in to your website administration panel.   
 2. Go to Plugins page Add New > Upload Plugin .    
 3. Click "Choose file" then select the [WordPress Coming Soon](https://wordpress.org/plugins/coming-soon-page/) and Maintenance mode plugin zip file. 
-4. Then Install and activate our [WordPress Maintenance mode](https://wordpress.org/plugins/coming-soon-page/) plugin.     
+4. Then Install and activate our WordPress Maintenance mode plugin.     
 5. Then, from the left panel of Dashboard, click on the gear icon - Coming Soon link to fully customize the plugin
 	  
 That's all, now you can build your Coming soon page and run website to Maintenance mode. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
