@@ -141,6 +141,10 @@ Our Coming soon and Maintenance mode is a user friendly plugin, but here you can
 
 Android doesn't allow set autoplay functionality on YouTube embedded videos, so it's not our fault, it's a global issue.
 
+= Can I change the position of Coming soon page content =
+
+Yes, we have such option and you can do this using drop down functionality.
+
 We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](http://wpdevart.com/wordpress-facebook-like-box-plugin),  [Lightbox WordPress](https://wordpress.org/plugins/wp-lightbox-2), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
 
 == Screenshots ==
