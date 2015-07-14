@@ -1040,6 +1040,17 @@ class coming_soon_admin_menu{
                         	</select>
 						</td>                
 					</tr>
+                    <tr>
+						<td>
+							Open in new tab <span title="If you want to open a social page in new tab enable this option" class="desription_class">?</span>
+						</td>
+						<td>
+							<select id="coming_soon_page_open_new_tabe">
+                                <option <?php selected($page_parametrs['coming_soon_page_open_new_tabe'],'1') ?> value="1">Enable</option>
+                                <option <?php selected($page_parametrs['coming_soon_page_open_new_tabe'],'0') ?> value="0">Disable</option>
+                        	</select>
+						</td>                
+					</tr>
                 	<tr>
 						<td>
 							Facebook url <span title="Type here Facebook url." class="desription_class">?</span>

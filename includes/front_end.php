@@ -228,27 +228,27 @@ class coming_soon_front_end{
        <div id="soc_icons"  class="soc_icon_coneiner">
 			<?php if($this->params['coming_soon_page_facebook']){ ?>
                 <span class="soc_icon">
-                    <a href="<?php echo $this->params['coming_soon_page_facebook']; ?>"><img src="<?php echo $this->plugin_url.'images/template1/facebook.png'; ?>" /></a>
+                    <a href="<?php echo $this->params['coming_soon_page_facebook']; ?>" <?php  echo $this->params['coming_soon_page_open_new_tabe']?' target="_blank" ':''; ?>><img src="<?php echo $this->plugin_url.'images/template1/facebook.png'; ?>" /></a>
                 </span>
             <?php } ?>
             <?php if($this->params['coming_soon_page_twitter']){ ?>
                 <span class="soc_icon">
-                    <a href="<?php echo $this->params['coming_soon_page_twitter']; ?>"><img src="<?php echo $this->plugin_url.'images/template1/twiter.png'; ?>" /></a>
+                    <a href="<?php echo $this->params['coming_soon_page_twitter']; ?>" <?php  echo $this->params['coming_soon_page_open_new_tabe']?' target="_blank" ':''; ?>><img src="<?php echo $this->plugin_url.'images/template1/twiter.png'; ?>" /></a>
                 </span>
             <?php } ?>
             <?php if($this->params['coming_soon_page_google_plus']){ ?>
                 <span class="soc_icon">
-                    <a href="<?php echo $this->params['coming_soon_page_google_plus']; ?>"><img src="<?php echo $this->plugin_url.'images/template1/gmail.png'; ?>" /></a>
+                    <a href="<?php echo $this->params['coming_soon_page_google_plus']; ?>" <?php  echo $this->params['coming_soon_page_open_new_tabe']?' target="_blank" ':''; ?>><img src="<?php echo $this->plugin_url.'images/template1/gmail.png'; ?>" /></a>
                 </span>
             <?php } ?>
             <?php if($this->params['coming_soon_page_youtube']){ ?>
                 <span class="soc_icon">
-                    <a href="<?php echo $this->params['coming_soon_page_youtube']; ?>"><img src="<?php echo $this->plugin_url.'images/template1/youtobe.png'; ?>" /></a>
+                    <a href="<?php echo $this->params['coming_soon_page_youtube']; ?>" <?php  echo $this->params['coming_soon_page_open_new_tabe']?' target="_blank" ':''; ?>><img src="<?php echo $this->plugin_url.'images/template1/youtobe.png'; ?>" /></a>
                 </span>
             <?php } ?>
             <?php if($this->params['coming_soon_page_instagram']){ ?>
                 <span class="soc_icon">
-                    <a href="<?php echo $this->params['coming_soon_page_instagram']; ?>"><img src="<?php echo $this->plugin_url.'images/template1/instagram.png'; ?>" /></a>
+                    <a href="<?php echo $this->params['coming_soon_page_instagram']; ?>" <?php  echo $this->params['coming_soon_page_open_new_tabe']?' target="_blank" ':''; ?>><img src="<?php echo $this->plugin_url.'images/template1/instagram.png'; ?>" /></a>
                 </span>
             <?php } ?>
         </div>                   

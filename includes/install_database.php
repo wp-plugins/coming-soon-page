@@ -47,18 +47,19 @@ class install_database{
 			"coming_subscribe"=>array(
 			),
 			"coming_social_networks"=>array(
-				"coming_soon_page_socialis_enable"				=> "1",
+				"coming_soon_page_socialis_enable"			=> "1",
+				"coming_soon_page_open_new_tabe"			=> "0",
 				
 				"coming_soon_page_facebook"			   		=> "",
 				"social_facbook_bacground_image" 	 	   	=> $this->plugin_url.'images/template1/facebook.png',				
 				"coming_soon_page_twitter" 		  		 	=> "",
 				"social_twiter_bacground_image" 	 	    => $this->plugin_url.'images/template1/twiter.png',				
-				"coming_soon_page_google_plus" 			 => "",
+				"coming_soon_page_google_plus" 			 	=> "",
 				"social_google_bacground_image" 	 	    => $this->plugin_url.'images/template1/gmail.png',			
-				"coming_soon_page_youtube" 			 	 => "",
-				"social_youtobe_bacground_image" 	 	   => $this->plugin_url.'images/template1/youtobe.png',			
-				"coming_soon_page_instagram"			   => "",
-				"social_instagram_bacground_image" 	 	 => $this->plugin_url.'images/template1/instagram.png',
+				"coming_soon_page_youtube" 			 	 	=> "",
+				"social_youtobe_bacground_image" 	 	   	=> $this->plugin_url.'images/template1/youtobe.png',			
+				"coming_soon_page_instagram"			   	=> "",
+				"social_instagram_bacground_image" 	 	 	=> $this->plugin_url.'images/template1/instagram.png',
 			),
 			"coming_link_to_dashboard"=>array(
 			),
