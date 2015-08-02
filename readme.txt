@@ -33,6 +33,7 @@ Coming soon and Maintenance mode plugin will add some great features to your com
 *   **Custom Logo for Coming Soon page**
 *   **Ability to use WordPress post editor for Coming soon page Message**
 *   **Social Media Ready(Facebook, Twitter, Google Plus, YouTube, Instagram)**
+*   **Ability to open social websites in a new window**
 *   **SEO friendly Coming Soon page**
 *   **Set Meta description for your Coming Soon page**
 *   **Set Meta keywords for your Coming Soon page**
