@@ -1846,12 +1846,6 @@ class coming_soon_admin_menu{
 						'title'			=>	'Coming soon and Maintenance mode',
 						'description'	=>	'Coming soon and Maintenance mode plugin is an awesome tool to show your visitors that you are working on your website to make it better.'
 						),
-			'lightbox'=>array(
-						'image_url'		=>	$this->plugin_url.'images/featured_plugins/lightbox.png',
-						'site_url'		=>	'http://wpdevart.com/wordpress-lightbox-plugin/',
-						'title'			=>	'WP Lightbox 2',
-						'description'	=>	'WP Lightbox 2 is awesome tool for adding responsive lightbox effect for images and also create lightbox for photo album/gallery on your WordPress blog.'
-						),
 			'youtube'=>array(
 						'image_url'		=>	$this->plugin_url.'images/featured_plugins/youtube.png',
 						'site_url'		=>	'http://wpdevart.com/wordpress-youtube-embed-plugin',
