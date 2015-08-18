@@ -4,7 +4,7 @@ Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
 Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode   
 Requires at least: 3.4.0
 Tested up to: 4.2.3
-Stable tag: 2.0.9
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
