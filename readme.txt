@@ -5,7 +5,7 @@ Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page
 Requires at least: 3.4.0
 Tested up to: 4.2.3
 Stable tag: 2.1.0
-License: GPLv2 or later
+License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Coming soon and Maintenance mode plugin is an awesome tool to show your visitors that you are working on your website to make it better.   
