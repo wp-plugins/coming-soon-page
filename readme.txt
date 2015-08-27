@@ -110,7 +110,7 @@ The Coming Soon and Maintenance mode plugin allows you to create Coming Soon pag
 The Coming Soon and Maintenance mode plugin plugin works without any problem with all popular WordPress themes that we tested, so you can use our Coming Soon and Maintenance mode plugin on any theme you like, if something goes wrong just let us know about it.
 Logged out users of your website will see the Maintenance mode while logged-in users will have access to your website. Maintenance mode is ideal solution for web developers who want to show their clients that website is in Maintenance mode while they working on the website.
 
-We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .
 
 == Installation ==
 
@@ -125,7 +125,7 @@ Installing the WordPress **Coming Soon and Maintenance mode** plugin
 	  
 That's all, now you can build your Coming soon page and run website to Maintenance mode. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
-We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .
 
 == Frequently Asked Questions ==
 
@@ -146,7 +146,7 @@ Android doesn't allow set autoplay functionality on YouTube embedded videos, so 
 
 Yes, we have such option and you can do this using drop down functionality.
 
-We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .
 
 == Screenshots ==
 
@@ -376,4 +376,4 @@ all fields are requared - All fields are required
 
 All fields required, so fill all fields and click on send button, that's all.
 
-We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .
