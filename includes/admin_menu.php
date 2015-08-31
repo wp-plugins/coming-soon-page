@@ -1858,6 +1858,12 @@ class coming_soon_admin_menu{
 						'title'			=>	'WordPress Countdown plugin',
 						'description'	=>	'WordPress Countdown plugin is an nice tool to create and insert countdown timers into your posts/pages and widgets.'
 						),
+            'facebook-comments'=>array(
+						'image_url'		=>	$this->plugin_url.'images/featured_plugins/facebook-comments-icon.png',
+						'site_url'		=>	'http://wpdevart.com/wordpress-facebook-comments-plugin/',
+						'title'			=>	'WordPress Facebook comments',
+						'description'	=>	'Our Facebook comments plugin will help you to display Facebook Comments on your website. You can use Facebook Comments on your pages/posts.'
+						),						
 			'facebook'=>array(
 						'image_url'		=>	$this->plugin_url.'images/featured_plugins/facebook.jpg',
 						'site_url'		=>	'http://wpdevart.com/wordpress-facebook-like-box-plugin',
