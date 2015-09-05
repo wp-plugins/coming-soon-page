@@ -200,7 +200,11 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 
 = 2.1.0 =
 
-*  Fixed some notices
+*  Fixed some notices.
+
+= 2.1.1 =
+
+*  Added new featured plugin. 
 
 ==Wordpress Coming soon step by step guide==
 
