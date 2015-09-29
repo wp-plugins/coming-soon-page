@@ -117,19 +117,24 @@ class coming_soon_front_end{
 		return false;
 	}
 	private function get_real_ip()    {
-		if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
-		{
-		  $ip=$_SERVER['HTTP_CLIENT_IP'];
-		}
-		elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
-		{
-		  $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
-		}
+		  $ipaddress = '';
+		if (isset($_SERVER['HTTP_INCAP_CLIENT_IP']) && $_SERVER['HTTP_INCAP_CLIENT_IP'])
+			$ipaddress = $_SERVER['HTTP_INCAP_CLIENT_IP'];
+		else if(isset($_SERVER['HTTP_CLIENT_IP']) && $_SERVER['HTTP_CLIENT_IP'])
+			$ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+		else if(isset($_SERVER['HTTP_X_FORWARDED_FOR']) && $_SERVER['HTTP_X_FORWARDED_FOR'])
+			$ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+		else if(isset($_SERVER['HTTP_X_FORWARDED']) && $_SERVER['HTTP_X_FORWARDED'])
+			$ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+		else if(isset($_SERVER['HTTP_FORWARDED_FOR']) && $_SERVER['HTTP_FORWARDED_FOR'])
+			$ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+		else if(isset($_SERVER['HTTP_FORWARDED']) && $_SERVER['HTTP_FORWARDED'])
+			$ipaddress = $_SERVER['HTTP_FORWARDED'];
+		else if(isset($_SERVER['REMOTE_ADDR']) && $_SERVER['REMOTE_ADDR'])
+			$ipaddress = $_SERVER['REMOTE_ADDR'];
 		else
-		{
-		  $ip=$_SERVER['REMOTE_ADDR'];
-		}
-		return $ip;		
+			$ipaddress = 'UNKNOWN';
+		return $ipaddress;
 	}
 	/*################################################################################### Background ###########################################################################*/
 	private function background_css(){

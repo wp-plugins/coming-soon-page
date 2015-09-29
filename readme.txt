@@ -4,7 +4,7 @@ Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
 Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode, bing   
 Requires at least: 3.4.0
 Tested up to: 4.2.3
-Stable tag: 2.1.1
+Stable tag: 2.1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ It's not easy to create coming soon page for WordPress without coding knowledge.
 ### View our Coming Soon and Maintenance mode plugin Demo page: 
 
 [Demo 1](http://democomingsoon.wpdevart.com/)
-[Demo 2](http://democs.wpdevart.com/)
+[Demo 2 - Video background](http://democs.wpdevart.com/)
 
 Coming soon and Maintenance mode plugin will add some great features to your coming soon page. 
 
@@ -146,7 +146,7 @@ Android doesn't allow set autoplay functionality on YouTube embedded videos, so 
 
 Yes, we have such option and you can do this using drop down functionality.
 
-We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .
+We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box plugin](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .
 
 == Screenshots ==
 
@@ -206,6 +206,10 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 
 *  Added new featured plugin.
 
+= 2.1.2 =
+
+*  Corrected some spelling mistakes.
+
 ==Wordpress Coming soon step by step guide==
 
 ### WordPress Coming Soon and Maintenance Mode - Logo
@@ -216,8 +220,8 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 *   Distance from top - Type here your logo distance from top.
 *   Logo Animation type - Choose animation type for your logo.
 *   Animation waiting time - Type here waiting time for Logo animation(in milliseconds). 
-*   Logo max width - Type here your logo maximum width.
-*   Logo max height - Type here your logo maximum height.
+*   Logo max width - Type here your website logo maximum width.
+*   Logo max height - Type here your website logo maximum height.
 
 
 ### WordPress Coming Soon and Maintenance Mode - Title
@@ -230,7 +234,7 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 *   Title position - Choose your coming soon page Title position(Left, Center, Right).
 *   Distance from top - Type here Title field distance from top.
 *   Title Animation type -  Choose animation type for Title.
-*   Animation waiting time - Type here waiting time for Title animation(in milliseconds). 
+*   Animation waiting time - Type here Title animation waiting time(in milliseconds). 
 
 ### WordPress Coming Soon and Maintenance Mode - Message
 
@@ -384,4 +388,4 @@ all fields are requared - All fields are required
 
 All fields required, so fill all fields and click on send button, that's all.
 
-We recommend you to take a look for this useful plugins - [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .
+We recommend you to take a look for this useful plugins - [WordPress Polls plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Facebook like box](https://wordpress.org/plugins/like-box), [WordPress YouTube](https://wordpress.org/plugins/youtube-video-player), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown), [Facebook comments WordPress](https://wordpress.org/plugins/comments-from-facebook) .

@@ -1868,7 +1868,7 @@ class coming_soon_admin_menu{
 						'image_url'		=>	$this->plugin_url.'images/featured_plugins/facebook.jpg',
 						'site_url'		=>	'http://wpdevart.com/wordpress-facebook-like-box-plugin',
 						'title'			=>	'Facebook Like Box',
-						'description'	=>	'Our Facebook like box plugin will help you to display Facebook like box on your wesite, just add Facebook Like box widget to your sidebar and use it..'
+						'description'	=>	'Our Facebook like box plugin will help you to display Facebook like box on your wesite, just add Facebook Like box widget to your sidebar or insert it into your posts/pages and use it.'
 						),
 			'poll'=>array(
 						'image_url'		=>	$this->plugin_url.'images/featured_plugins/poll.png',
