@@ -36,7 +36,7 @@ class coming_soon_front_end{
 	
 	public function create_fornt_end(){
 		if($this->params['coming_soon_page_mode']=='on'){			
-				//if user not login page is redirect on coming soon template page
+				//if user not logged in, page will redirect to coming soon template page
 				if ( (!is_user_logged_in() && !$this->is_in_except()) || (isset($_GET['special_variable_for_live_previev']) && $_GET['special_variable_for_live_previev']=='sdfg564sfdh645fds4ghs515vsr5g48strh846sd6g41513btsd') )
 				{				
 					//get path of our coming soon display page and redirecting
