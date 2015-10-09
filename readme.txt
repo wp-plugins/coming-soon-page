@@ -210,6 +210,10 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 
 *  Corrected some spelling mistakes.
 
+= 2.1.3 =
+
+*  Fixed notices.
+
 ==Wordpress Coming soon step by step guide==
 
 ### WordPress Coming Soon and Maintenance Mode - Logo
