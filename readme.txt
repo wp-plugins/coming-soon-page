@@ -212,7 +212,7 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 
 = 2.1.3 =
 
-*  Fixed notices.
+*  Fixed notices .
 
 ==Wordpress Coming soon step by step guide==
 
