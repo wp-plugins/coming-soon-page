@@ -39,7 +39,7 @@ class coming_soon_front_end{
 				//if user not logged in, page will redirect to coming soon template page
 				if ( (!is_user_logged_in() && !$this->is_in_except()) || (isset($_GET['special_variable_for_live_previev']) && $_GET['special_variable_for_live_previev']=='sdfg564sfdh645fds4ghs515vsr5g48strh846sd6g41513btsd') )
 				{				
-					//get path of our coming soon display page and redirecting
+					//get path of our coming soon display page and then redirecting
 					$this->generete_front_end_html();
 					exit();
 				}
