@@ -238,6 +238,10 @@ We recommend you to take a look for this useful plugins - [WordPress Poll plugin
 
 *  Made changes.
 
+= 2.2.0 =
+
+*  Fixed notice.
+
 ==Wordpress Coming soon step by step guide==
 
 ### WordPress Coming Soon and Maintenance Mode - Logo
