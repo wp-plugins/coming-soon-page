@@ -4,7 +4,7 @@
 
 class install_database{
 	
-	public $installed_options; // standart options
+	public $installed_options; // standard options
 	private $plugin_url;
 
 	function __construct(){

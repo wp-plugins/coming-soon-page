@@ -4,7 +4,7 @@ Donate link: http://wpdevart.com/wordpress-coming-soon-plugin/
 Tags: widget, Post , plugin, admin, twitter, page, coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, landing page, underconstruction, squeeze page, countdown, maintenance page, site offline, wordpress maintenance plugin, wordpress maintenance mode. wordpress under constructio, email, gmail, message, notify, preview, subscriber, user, meta, under maintenance, site maintenance, schedule maintenance, admin maintenance, Maintenance Checklist, mode, custom maintenence mode    
 Requires at least: 3.4.0
 Tested up to: 4.2.3
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -121,7 +121,7 @@ Installing the WordPress **Coming Soon and Maintenance mode** plugin
 2. Go to Plugins page Add New > Upload Plugin .    
 3. Click "Choose file" then select the [WordPress Coming Soon](https://wordpress.org/plugins/coming-soon-page/) and Maintenance mode plugin zip file. 
 4. Then Install and activate our WordPress Maintenance mode plugin.     
-5. Then, from the left panel of Dashboard, click on the gear icon - Coming Soon link to fully customize the plugin
+5. From the left panel of Dashboard, click on the gear icon - Coming Soon link to fully customize the plugin
 	  
 That's all, now you can build your Coming soon page and run website to Maintenance mode. If any problem occurs, contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
